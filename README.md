@@ -5,10 +5,7 @@
 > Reliable algotrading utilities written in node - Updated and maintained fork
 
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/nielse63/stonksjs?style=flat-square)
-![CI Tests](https://github.com/nielse63/stonksjs/workflows/CI%20Tests/badge.svg)
 ![Coveralls github](https://img.shields.io/coveralls/github/nielse63/stonksjs?style=flat-square)
-![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/nielse63/stonksjs?style=flat-square)
-![Code Climate technical debt](https://img.shields.io/codeclimate/tech-debt/nielse63/stonksjs?style=flat-square)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 - [Features](#features)
