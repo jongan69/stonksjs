@@ -115,3 +115,7 @@ tmp/
 .runtimeconfig.json
 backup/
 old/
+
+# Generated documentation
+docs/
+**/docs/
