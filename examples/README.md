@@ -1,159 +1,198 @@
-# stonksjs Examples
+# StonksJS Examples
 
-This directory contains comprehensive examples demonstrating all the
-functionality available in the stonksjs ecosystem.
+This directory contains comprehensive examples demonstrating how to use the
+stonksjs ecosystem for stock analysis and screening.
 
-## Quick Start
+## 📁 Available Examples
 
-### TypeScript/ESM Version
+### 1. Comprehensive Demo (`comprehensive-demo.js` & `comprehensive-demo.ts`)
+
+**Purpose**: Demonstrates all functionality across the stonksjs ecosystem
+
+- 📊 Stock quote retrieval with detailed metrics
+- 🔍 40+ pre-defined stock screeners
+- 💾 Cached quote data for better performance
+- 🚀 Advanced portfolio and sentiment analysis
+
+**Usage**:
 
 ```bash
-# Run the comprehensive demo
-npx ts-node examples/comprehensive-demo.ts
+# JavaScript version
+node examples/comprehensive-demo.js
 
-# Or if you have the project built
-node examples/comprehensive-demo.ts
+# TypeScript version
+npx ts-node examples/comprehensive-demo.ts
 ```
 
-### JavaScript/CommonJS Version
+### 2. Single Stock Analysis (`single-stock-analysis.js` & `single-stock-analysis.ts`)
+
+**Purpose**: Comprehensive analysis of a single stock
+
+- 📈 Detailed quote information and financial metrics
+- 📊 Technical indicators and performance analysis
+- 🔍 Screener analysis (which screeners the stock appears in)
+- 🏭 Sector and industry analysis
+- 💡 Investment considerations and recommendations
+
+**Usage**:
 
 ```bash
-# Run the comprehensive demo
+# JavaScript version
+node examples/single-stock-analysis.js [SYMBOL]
+
+# TypeScript version
+npx ts-node examples/single-stock-analysis.ts [SYMBOL]
+
+# Examples
+node examples/single-stock-analysis.js AAPL
+node examples/single-stock-analysis.js TSLA
+node examples/single-stock-analysis.js CAN
+```
+
+### 3. Easy-to-Use Shell Script (`analyze-stock.sh`)
+
+**Purpose**: Simple command-line interface for single stock analysis
+
+**Usage**:
+
+```bash
+# Make executable (first time only)
+chmod +x examples/analyze-stock.sh
+
+# Analyze any stock
+./examples/analyze-stock.sh [SYMBOL]
+
+# Examples
+./examples/analyze-stock.sh AAPL
+./examples/analyze-stock.sh TSLA
+./examples/analyze-stock.sh CAN
+```
+
+## 🚀 Quick Start
+
+### Option 1: Run the Interactive Demo
+
+```bash
+# Run the comprehensive demo showing all features
 node examples/comprehensive-demo.js
 ```
 
-## What the Examples Demonstrate
+### Option 2: Analyze a Specific Stock
 
-### 📊 **Finviz API (`@stonksjs/finviz`)**
+```bash
+# Analyze Apple stock
+node examples/single-stock-analysis.js AAPL
 
-- **Single Stock Quotes**: Get detailed financial metrics for individual stocks
-- **Multiple Stock Quotes**: Batch retrieval and comparison of multiple stocks
-- **Available Screeners**: List all 40+ pre-defined screeners from Finviz
-- **Custom Screeners**: Use specific screener URLs or names
+# Or use the shell script
+./examples/analyze-stock.sh AAPL
+```
 
-### 💾 **Quote Package (`@stonksjs/quote`)**
+## 📊 What You'll Get
 
-- **Cached Retrieval**: Automatic caching for improved performance
-- **Performance Testing**: Demonstrate cache speedup benefits
-- **Memory Management**: Efficient quote data storage
+### Comprehensive Demo Output
 
-### 🔍 **Stock Screener (`@stonksjs/stock-screener`)**
+- **33 different stock screeners** with real-time data
+- **Performance-based screeners** (top gainers, losers, most volatile)
+- **Fundamental screeners** (undervalued, overvalued, high growth)
+- **Technical screeners** (overbought, oversold, unusual volume)
+- **News & events screeners** (earnings, insider trading, upgrades)
+- **Sector-specific screeners** (technology, healthcare, financial, etc.)
 
-- **Performance Screeners**: Top gainers, losers, new highs/lows, most
-  active/volatile
-- **Technical Analysis**: Oversold/overbought, chart patterns,
-  support/resistance
-- **News & Events**: Earnings, upgrades/downgrades, insider trading, major news
-- **Custom Combinations**: Combine multiple screeners for advanced analysis
+### Single Stock Analysis Output
 
-### 🚀 **Advanced Usage**
+- **Basic Information**: Symbol, company, sector, industry, market cap
+- **Financial Metrics**: P/E ratio, EPS, ROE, ROA, debt/equity, current ratio
+- **Technical Indicators**: RSI, SMA (20/50/200), 52-week high/low
+- **Performance Analysis**: Price movement, volume analysis, momentum
+- **Screener Analysis**: Which screeners the stock appears in
+- **Investment Considerations**: Valuation analysis, dividend yield, market cap
+  classification
 
-- **Portfolio Analysis**: Analyze multiple stocks with key metrics
-- **Market Sentiment**: Calculate market sentiment from screener data
-- **Custom Strategies**: Build your own screening combinations
+## 🔧 Prerequisites
 
-## Example Output
+- Node.js 18.14.0 or higher
+- npm or bun package manager
+- Internet connection (for real-time data from Finviz)
 
-The comprehensive demo will show:
+## 📦 Installation
+
+```bash
+# Install dependencies
+npm install
+
+# Build all packages
+npm run build
+```
+
+## 🎯 Example Output
+
+### Single Stock Analysis for AAPL
 
 ```
-🚀 Starting stonksjs Comprehensive Demo
-This demo showcases all functionality across the stonksjs ecosystem
-
 ============================================================
-📊 FINVIZ API DEMONSTRATION
+📊 COMPREHENSIVE ANALYSIS FOR $AAPL
 ============================================================
 
-----------------------------------------
-🔍 Single Stock Quote (AAPL)
-----------------------------------------
-✅ Successfully retrieved AAPL quote
-Key metrics:
-  Price: $150.25
-  Change: +2.15%
-  Market Cap: $2.4T
-  P/E Ratio: 28.5
-  Volume: 45,234,567
-  RSI(14): 65.2
-  Beta: 1.2
+📈 BASIC QUOTE INFORMATION
+────────────────────────────────────────
+Symbol: AAPL
+Company: Apple Inc.
+Sector: Technology
+Industry: Consumer Electronics
+Market Cap: 3790.98B
+P/E Ratio: 28.45
+Price: $255.45
+Change: +0.32%
+Volume: 48,713,940
 
-📈 Stock Comparison:
-Symbol | Price    | Change   | P/E  | Volume      | RSI
--------|----------|----------|------|-------------|-----
-MSFT   | $350.45  | +1.25%   | 25.3 | 23,456,789  | 58.7
-GOOGL  | $2,850.12| +0.85%   | 22.1 | 1,234,567   | 62.1
-TSLA   | $245.67  | +3.45%   | 45.2 | 67,890,123  | 71.3
-NVDA   | $425.89  | +2.15%   | 35.7 | 45,678,901  | 68.9
+💰 FINANCIAL METRICS
+────────────────────────────────────────
+EPS (TTM): 8.97
+ROE: 149.81%
+ROA: 29.94%
+Current Ratio: 0.87
+Quick Ratio: 0.83
+
+📊 TECHNICAL INDICATORS
+────────────────────────────────────────
+RSI (14): 65.2
+SMA 20: 4.70%
+SMA 50: 10.59%
+SMA 200: 15.02%
+
+🔍 SCREENER ANALYSIS
+────────────────────────────────────────
+✅ AAPL appears in 3 screeners:
+   • large cap
+   • technology
+   • high volume
+
+💡 INVESTMENT CONSIDERATIONS
+────────────────────────────────────────
+🏢 Large cap stock
+ℹ️  Moderate P/E ratio
+ℹ️  Neutral RSI levels
 ```
 
-## Individual Package Examples
+## 🛠️ Customization
 
-Each package also has its own examples:
+You can easily modify these examples to:
 
-- **`packages/finviz/examples/`**: Basic Finviz API usage
-- **`packages/quote/examples/`**: Simple quote retrieval
-- **`packages/stock-screener/examples/`**: Basic screener usage
+- Add more screeners to check
+- Include additional financial metrics
+- Customize the analysis criteria
+- Add more technical indicators
+- Integrate with other data sources
 
-## Building Your Own Examples
+## 📝 Notes
 
-### Basic Quote Retrieval
+- All examples use real-time data from Finviz
+- Rate limiting is built-in to respect Finviz's servers
+- Data is cached for better performance
+- Examples handle missing data gracefully
+- Both JavaScript and TypeScript versions are available
 
-```typescript
-import { finviz } from '@stonksjs/core';
+## 🤝 Contributing
 
-const quote = await finviz.getQuote('AAPL');
-console.log(`AAPL is trading at $${quote.price}`);
-```
-
-### Using Screeners
-
-```typescript
-import { stockScreener } from '@stonksjs/core';
-
-const screener = new stockScreener.StockScreener();
-const topGainers = await screener.getTopGainers();
-console.log('Top gaining stocks:', topGainers);
-```
-
-### Cached Quotes
-
-```typescript
-import { quote } from '@stonksjs/core';
-
-const quoteInstance = new quote.Quote();
-const data = await quoteInstance.get('MSFT'); // Cached on subsequent calls
-```
-
-## Performance Tips
-
-1. **Use Caching**: The quote package automatically caches results
-2. **Batch Operations**: Use `Promise.all()` for multiple simultaneous requests
-3. **Screener Combinations**: Combine multiple screeners for complex analysis
-4. **Error Handling**: Always wrap API calls in try-catch blocks
-
-## Troubleshooting
-
-### Common Issues
-
-1. **Network Errors**: Ensure you have internet connectivity
-2. **Rate Limiting**: Finviz may rate limit requests; add delays between calls
-3. **Invalid Symbols**: Verify stock symbols are correct (e.g., 'AAPL' not
-   'apple')
-
-### Getting Help
-
-- Check the [main README](../README.md) for installation instructions
-- Review individual package documentation in `packages/*/README.md`
-- Open an issue on GitHub for bugs or feature requests
-
-## Contributing
-
-Want to add your own example? Create a new file in this directory and update
-this README!
-
-Examples should:
-
-- Be well-commented and documented
-- Handle errors gracefully
-- Demonstrate real-world usage patterns
-- Include both TypeScript and JavaScript versions when possible
+Feel free to submit issues or pull requests to improve these examples or add new
+ones!

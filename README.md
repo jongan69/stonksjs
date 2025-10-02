@@ -74,6 +74,28 @@ including:
 - 💾 Cached quote data for better performance
 - 🚀 Advanced portfolio and sentiment analysis
 
+### Single Stock Analysis
+
+For detailed analysis of a specific stock:
+
+```bash
+# Analyze any stock (JavaScript)
+node examples/single-stock-analysis.js AAPL
+
+# Or use the convenient shell script
+./examples/analyze-stock.sh TSLA
+
+# TypeScript version
+npx ts-node examples/single-stock-analysis.ts CAN
+```
+
+This provides comprehensive analysis including:
+
+- 📈 Detailed financial metrics and technical indicators
+- 🔍 Which screeners the stock appears in
+- 🏭 Sector and industry analysis
+- 💡 Investment considerations and recommendations
+
 | Name                                                                                               | Description                                                  | Version                                                                                                    |
 | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------- |
 | [@stonksjs/core](https://github.com/nielse63/stonksjs/tree/main/packages/core)                     | Single point of entry for all stonksjs packages              | ![npm (scoped)](https://img.shields.io/npm/v/@stonksjs/core?color=brightgreen&style=flat-square)           |
