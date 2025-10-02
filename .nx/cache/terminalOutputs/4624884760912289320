@@ -1,0 +1,5 @@
+
+> @jongan69/stonksjs-core@4.0.1 docs
+> typedoc --options typedoc.json
+
+[info] Documentation generated at ./docs

@@ -1,5 +1,4 @@
 {
   "extends": ["./typedoc.js"],
-  "entryPointStrategy": "resolve",
-  "plugin": ["typedoc-plugin-markdown"]
+  "entryPointStrategy": "resolve"
 }

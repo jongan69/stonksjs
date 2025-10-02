@@ -9596,15 +9596,6 @@
         "hash": "sha512-ahJ6Cpcvxwaxfu4KtjA8qZNqS43wYt6JL27wYiIgl1vd38WW/KWX11YuAeZhuz9v+ttrutSsgK+XO1CjL1kA3w=="
       }
     },
-    "npm:typedoc-plugin-markdown": {
-      "type": "npm",
-      "name": "npm:typedoc-plugin-markdown",
-      "data": {
-        "version": "4.9.0",
-        "packageName": "typedoc-plugin-markdown",
-        "hash": "sha512-9Uu4WR9L7ZBgAl60N/h+jqmPxxvnC9nQAlnnO/OujtG2ubjnKTVUFY1XDhcMY+pCqlX3N2HsQM2QTYZIU9tJuw=="
-      }
-    },
     "npm:typescript": {
       "type": "npm",
       "name": "npm:typescript",
@@ -22830,13 +22821,6 @@
         "type": "static"
       }
     ],
-    "npm:typedoc-plugin-markdown": [
-      {
-        "source": "npm:typedoc-plugin-markdown",
-        "target": "npm:typedoc",
-        "type": "static"
-      }
-    ],
     "npm:unbox-primitive": [
       {
         "source": "npm:unbox-primitive",
@@ -23228,5 +23212,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1759412325553
+  "computedAt": 1759412744274
 }

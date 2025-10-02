@@ -1,62 +1,62 @@
 {
   "run": {
     "command": "lerna run docs",
-    "startTime": "2025-10-02T13:25:42.882Z",
-    "endTime": "2025-10-02T13:25:55.456Z",
+    "startTime": "2025-10-02T13:44:48.020Z",
+    "endTime": "2025-10-02T13:45:25.996Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "@jongan69/stonksjs-finviz:build",
-      "target": "build",
-      "projectName": "@jongan69/stonksjs-finviz",
-      "hash": "9486617293584861906",
-      "startTime": "2025-10-02T13:25:43.076Z",
-      "endTime": "2025-10-02T13:25:43.105Z",
-      "params": "",
-      "cacheStatus": "local-cache-hit",
-      "status": 0
-    },
-    {
       "taskId": "@jongan69/stonksjs-finviz:docs",
       "target": "docs",
       "projectName": "@jongan69/stonksjs-finviz",
-      "hash": "15114240089308736205",
-      "startTime": "2025-10-02T13:25:43.076Z",
-      "endTime": "2025-10-02T13:25:50.416Z",
+      "hash": "12654837337070002806",
+      "startTime": "2025-10-02T13:44:48.628Z",
+      "endTime": "2025-10-02T13:44:57.329Z",
       "params": "",
       "cacheStatus": "cache-miss",
-      "status": 1
+      "status": 0
+    },
+    {
+      "taskId": "@jongan69/stonksjs-finviz:build",
+      "target": "build",
+      "projectName": "@jongan69/stonksjs-finviz",
+      "hash": "1537170234042867870",
+      "startTime": "2025-10-02T13:44:48.627Z",
+      "endTime": "2025-10-02T13:45:00.367Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
     },
     {
       "taskId": "@jongan69/stonksjs-quote:docs",
       "target": "docs",
       "projectName": "@jongan69/stonksjs-quote",
-      "hash": "9781117791619340046",
-      "startTime": "2025-10-02T13:25:43.117Z",
-      "endTime": "2025-10-02T13:25:50.458Z",
+      "hash": "15160471921385452482",
+      "startTime": "2025-10-02T13:45:00.426Z",
+      "endTime": "2025-10-02T13:45:16.201Z",
       "params": "",
       "cacheStatus": "cache-miss",
-      "status": 1
+      "status": 0
     },
     {
       "taskId": "@jongan69/stonksjs-stock-screener:docs",
       "target": "docs",
       "projectName": "@jongan69/stonksjs-stock-screener",
-      "hash": "10338295236742076537",
-      "startTime": "2025-10-02T13:25:43.117Z",
-      "endTime": "2025-10-02T13:25:50.512Z",
+      "hash": "12577241081877398113",
+      "startTime": "2025-10-02T13:45:00.426Z",
+      "endTime": "2025-10-02T13:45:16.719Z",
       "params": "",
       "cacheStatus": "cache-miss",
-      "status": 1
+      "status": 0
     },
     {
       "taskId": "@jongan69/stonksjs-quote:build",
       "target": "build",
       "projectName": "@jongan69/stonksjs-quote",
-      "hash": "647693726580267351",
-      "startTime": "2025-10-02T13:25:43.117Z",
-      "endTime": "2025-10-02T13:25:55.404Z",
+      "hash": "3655025348693059413",
+      "startTime": "2025-10-02T13:45:00.426Z",
+      "endTime": "2025-10-02T13:45:19.111Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
@@ -65,9 +65,20 @@
       "taskId": "@jongan69/stonksjs-stock-screener:build",
       "target": "build",
       "projectName": "@jongan69/stonksjs-stock-screener",
-      "hash": "3118928659942102666",
-      "startTime": "2025-10-02T13:25:43.117Z",
-      "endTime": "2025-10-02T13:25:55.415Z",
+      "hash": "10387202278152748172",
+      "startTime": "2025-10-02T13:45:00.426Z",
+      "endTime": "2025-10-02T13:45:19.270Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "@jongan69/stonksjs-core:docs",
+      "target": "docs",
+      "projectName": "@jongan69/stonksjs-core",
+      "hash": "4624884760912289320",
+      "startTime": "2025-10-02T13:45:19.282Z",
+      "endTime": "2025-10-02T13:45:25.981Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0

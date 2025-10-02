@@ -1,0 +1,7 @@
+
+> @jongan69/stonksjs-quote@4.0.1 docs
+> typedoc --options typedoc.json
+
+[warning] Cache, defined in ./src/Cache.ts, is referenced by Quote.cache but not included in the documentation.
+[warning] Quote, defined in ./src/types.d.ts, is referenced by Quote.get.get but not included in the documentation.
+[info] Documentation generated at ./docs
