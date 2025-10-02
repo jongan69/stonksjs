@@ -1,8 +1,8 @@
 {
   "run": {
     "command": "lerna run build",
-    "startTime": "2025-10-02T12:38:18.329Z",
-    "endTime": "2025-10-02T12:38:25.448Z",
+    "startTime": "2025-10-02T13:05:01.679Z",
+    "endTime": "2025-10-02T13:05:09.363Z",
     "inner": false
   },
   "tasks": [
@@ -10,20 +10,9 @@
       "taskId": "@jongan69/stonksjs-finviz:build",
       "target": "build",
       "projectName": "@jongan69/stonksjs-finviz",
-      "hash": "15080255585930199956",
-      "startTime": "2025-10-02T12:38:18.421Z",
-      "endTime": "2025-10-02T12:38:18.438Z",
-      "params": "",
-      "cacheStatus": "local-cache-hit",
-      "status": 0
-    },
-    {
-      "taskId": "@jongan69/stonksjs-stock-screener:build",
-      "target": "build",
-      "projectName": "@jongan69/stonksjs-stock-screener",
-      "hash": "5562412675566556221",
-      "startTime": "2025-10-02T12:38:18.446Z",
-      "endTime": "2025-10-02T12:38:23.136Z",
+      "hash": "9486617293584861906",
+      "startTime": "2025-10-02T13:05:01.761Z",
+      "endTime": "2025-10-02T13:05:04.330Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
@@ -32,9 +21,20 @@
       "taskId": "@jongan69/stonksjs-quote:build",
       "target": "build",
       "projectName": "@jongan69/stonksjs-quote",
-      "hash": "13009367240998555923",
-      "startTime": "2025-10-02T12:38:18.446Z",
-      "endTime": "2025-10-02T12:38:23.147Z",
+      "hash": "12111933576402600736",
+      "startTime": "2025-10-02T13:05:04.340Z",
+      "endTime": "2025-10-02T13:05:07.176Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "@jongan69/stonksjs-stock-screener:build",
+      "target": "build",
+      "projectName": "@jongan69/stonksjs-stock-screener",
+      "hash": "6008153091926007476",
+      "startTime": "2025-10-02T13:05:04.340Z",
+      "endTime": "2025-10-02T13:05:07.201Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
@@ -43,9 +43,9 @@
       "taskId": "@jongan69/stonksjs-core:build",
       "target": "build",
       "projectName": "@jongan69/stonksjs-core",
-      "hash": "10251285945547568716",
-      "startTime": "2025-10-02T12:38:23.172Z",
-      "endTime": "2025-10-02T12:38:25.438Z",
+      "hash": "13890983673396676817",
+      "startTime": "2025-10-02T13:05:07.208Z",
+      "endTime": "2025-10-02T13:05:09.357Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
