@@ -4,193 +4,52 @@
   "pathMappings": {},
   "nxJsonPlugins": [],
   "fileMap": {
-    "nonProjectFiles": [
-      {
-        "file": "package-lock.json",
-        "hash": "13658050300469764851"
-      },
-      {
-        "file": "scripts/serve-docs.sh",
-        "hash": "6122045927438647087"
-      },
-      {
-        "file": "examples/run-demo.sh",
-        "hash": "15874751894577518357"
-      },
-      {
-        "file": "CODE_OF_CONDUCT.md",
-        "hash": "13342987898961666866"
-      },
-      {
-        "file": "LICENSE",
-        "hash": "1872576125861680257"
-      },
-      {
-        "file": ".editorconfig",
-        "hash": "15224698024415327018"
-      },
-      {
-        "file": ".github/workflows/github-pages.yml",
-        "hash": "798982074529154136"
-      },
-      {
-        "file": ".github/workflows/docs.yml",
-        "hash": "11882333970797314944"
-      },
-      {
-        "file": ".bin/docs",
-        "hash": "18292961365990077771"
-      },
-      {
-        "file": ".github/pull_request_template.md",
-        "hash": "10250244320450370981"
-      },
-      {
-        "file": "examples/README.md",
-        "hash": "12198603789604387207"
-      },
-      {
-        "file": ".vscode/settings.json",
-        "hash": "10390736458109205806"
-      },
-      {
-        "file": "babel.config.js",
-        "hash": "2289699371279952991"
-      },
-      {
-        "file": ".bin/release",
-        "hash": "12728750433947900478"
-      },
-      {
-        "file": "examples/comprehensive-demo.ts",
-        "hash": "8451858758123160233"
-      },
-      {
-        "file": "tsconfig.eslint.json",
-        "hash": "9006676056171280949"
-      },
-      {
-        "file": "lerna.json",
-        "hash": "16043083955558608338"
-      },
-      {
-        "file": ".github/ISSUE_TEMPLATE/bug.md",
-        "hash": "10568866426236474645"
-      },
-      {
-        "file": "package.json",
-        "hash": "6476023293345567347"
-      },
-      {
-        "file": ".eslintrc.js",
-        "hash": "13593529134528136490"
-      },
-      {
-        "file": ".npmignore",
-        "hash": "18056334735872647162"
-      },
-      {
-        "file": ".husky/pre-commit",
-        "hash": "13469207043343598078"
-      },
-      {
-        "file": "config/typedoc.packages.json",
-        "hash": "4034039031077207821"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "11638209859518646535"
-      },
-      {
-        "file": "PUBLISHING.md",
-        "hash": "9665138857054821049"
-      },
-      {
-        "file": ".github/dependabot.yml",
-        "hash": "6572170332587527740"
-      },
-      {
-        "file": "global.d.ts",
-        "hash": "14274473339422334983"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "14559272747432021178"
-      },
-      {
-        "file": "examples/single-stock-analysis.ts",
-        "hash": "14119655078594538908"
-      },
-      {
-        "file": "examples/comprehensive-demo.js",
-        "hash": "7582380785453113632"
-      },
-      {
-        "file": "examples/analyze-stock.sh",
-        "hash": "8377015375131856928"
-      },
-      {
-        "file": "jest.config.js",
-        "hash": "7577309450353479091"
-      },
-      {
-        "file": "examples/single-stock-analysis.js",
-        "hash": "8095653109595215010"
-      },
-      {
-        "file": ".eslintignore",
-        "hash": "13857813648536726910"
-      },
-      {
-        "file": ".bin/clean",
-        "hash": "11658597702654455368"
-      },
-      {
-        "file": "nx.json",
-        "hash": "14306609654782995249"
-      },
-      {
-        "file": ".github/workflows/nodejs.yml",
-        "hash": "13901565667510895638"
-      },
-      {
-        "file": ".npmrc",
-        "hash": "16102865510183352886"
-      },
-      {
-        "file": "GITHUB_PAGES_SETUP.md",
-        "hash": "10486820522458018858"
-      },
-      {
-        "file": ".bin/depcheck",
-        "hash": "818957538747789714"
-      },
-      {
-        "file": ".nvmrc",
-        "hash": "4400159139668804120"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "11170586738084933006"
-      },
-      {
-        "file": "tsconfig.json",
-        "hash": "16150058383600412081"
-      },
-      {
-        "file": "config/typedoc.js",
-        "hash": "14605462696147020944"
-      },
-      {
-        "file": "README.md",
-        "hash": "13088327992367718388"
-      },
-      {
-        "file": ".github/ISSUE_TEMPLATE/feature_request.md",
-        "hash": "2654980801398947370"
-      }
-    ],
     "projectFileMap": {
+      "@jongan69/stonksjs-core": [
+        {
+          "file": "packages/core/.npmignore",
+          "hash": "18056334735872647162"
+        },
+        {
+          "file": "packages/core/README.md",
+          "hash": "12397799123092611591"
+        },
+        {
+          "file": "packages/core/package.json",
+          "hash": "18095445427413805729",
+          "deps": [
+            "npm:typedoc@0.24.8",
+            "npm:typescript@5.0.4",
+            "@jongan69/stonksjs-finviz",
+            "@jongan69/stonksjs-quote",
+            "@jongan69/stonksjs-stock-screener"
+          ]
+        },
+        {
+          "file": "packages/core/src/__tests__/index.spec.ts",
+          "hash": "5146692722824297043"
+        },
+        {
+          "file": "packages/core/src/index.ts",
+          "hash": "9730379274823027152"
+        },
+        {
+          "file": "packages/core/tsconfig.cjs.json",
+          "hash": "18139455147949696568"
+        },
+        {
+          "file": "packages/core/tsconfig.esm.json",
+          "hash": "17139651704725119723"
+        },
+        {
+          "file": "packages/core/tsconfig.json",
+          "hash": "12455434141492021329"
+        },
+        {
+          "file": "packages/core/typedoc.json",
+          "hash": "174229671463700184"
+        }
+      ],
       "@jongan69/stonksjs-quote": [
         {
           "file": "packages/quote/.npmignore",
@@ -251,71 +110,6 @@
         },
         {
           "file": "packages/quote/typedoc.json",
-          "hash": "174229671463700184"
-        }
-      ],
-      "@jongan69/stonksjs-stock-screener": [
-        {
-          "file": "packages/stock-screener/.bin/generate",
-          "hash": "7737432895989493005"
-        },
-        {
-          "file": "packages/stock-screener/.npmignore",
-          "hash": "18056334735872647162"
-        },
-        {
-          "file": "packages/stock-screener/README.md",
-          "hash": "14515478313553726829"
-        },
-        {
-          "file": "packages/stock-screener/examples/index.js",
-          "hash": "9236934300700643653"
-        },
-        {
-          "file": "packages/stock-screener/package.json",
-          "hash": "6291962508258933567",
-          "deps": [
-            "npm:typedoc@0.24.8",
-            "npm:typescript@5.0.4",
-            "@jongan69/stonksjs-finviz",
-            "npm:axios",
-            "npm:lodash"
-          ]
-        },
-        {
-          "file": "packages/stock-screener/src/StockScreener.ts",
-          "hash": "4210769440979973214"
-        },
-        {
-          "file": "packages/stock-screener/src/__fixtures__/filters.ts",
-          "hash": "3774811862568817739"
-        },
-        {
-          "file": "packages/stock-screener/src/__tests__/StockScreener.spec.ts",
-          "hash": "12814775007993702474"
-        },
-        {
-          "file": "packages/stock-screener/src/index.ts",
-          "hash": "11896107435951877615"
-        },
-        {
-          "file": "packages/stock-screener/src/types.d.ts",
-          "hash": "14570994914477107236"
-        },
-        {
-          "file": "packages/stock-screener/tsconfig.cjs.json",
-          "hash": "18139455147949696568"
-        },
-        {
-          "file": "packages/stock-screener/tsconfig.esm.json",
-          "hash": "17139651704725119723"
-        },
-        {
-          "file": "packages/stock-screener/tsconfig.json",
-          "hash": "12455434141492021329"
-        },
-        {
-          "file": "packages/stock-screener/typedoc.json",
           "hash": "174229671463700184"
         }
       ],
@@ -412,51 +206,257 @@
           "hash": "174229671463700184"
         }
       ],
-      "@jongan69/stonksjs-core": [
+      "@jongan69/stonksjs-stock-screener": [
         {
-          "file": "packages/core/.npmignore",
+          "file": "packages/stock-screener/.bin/generate",
+          "hash": "7737432895989493005"
+        },
+        {
+          "file": "packages/stock-screener/.npmignore",
           "hash": "18056334735872647162"
         },
         {
-          "file": "packages/core/README.md",
-          "hash": "12397799123092611591"
+          "file": "packages/stock-screener/README.md",
+          "hash": "14515478313553726829"
         },
         {
-          "file": "packages/core/package.json",
-          "hash": "18095445427413805729",
+          "file": "packages/stock-screener/examples/index.js",
+          "hash": "9236934300700643653"
+        },
+        {
+          "file": "packages/stock-screener/package.json",
+          "hash": "6291962508258933567",
           "deps": [
             "npm:typedoc@0.24.8",
             "npm:typescript@5.0.4",
             "@jongan69/stonksjs-finviz",
-            "@jongan69/stonksjs-quote",
-            "@jongan69/stonksjs-stock-screener"
+            "npm:axios",
+            "npm:lodash"
           ]
         },
         {
-          "file": "packages/core/src/__tests__/index.spec.ts",
-          "hash": "5146692722824297043"
+          "file": "packages/stock-screener/src/StockScreener.ts",
+          "hash": "4210769440979973214"
         },
         {
-          "file": "packages/core/src/index.ts",
-          "hash": "9730379274823027152"
+          "file": "packages/stock-screener/src/__fixtures__/filters.ts",
+          "hash": "3774811862568817739"
         },
         {
-          "file": "packages/core/tsconfig.cjs.json",
+          "file": "packages/stock-screener/src/__tests__/StockScreener.spec.ts",
+          "hash": "12814775007993702474"
+        },
+        {
+          "file": "packages/stock-screener/src/index.ts",
+          "hash": "11896107435951877615"
+        },
+        {
+          "file": "packages/stock-screener/src/types.d.ts",
+          "hash": "14570994914477107236"
+        },
+        {
+          "file": "packages/stock-screener/tsconfig.cjs.json",
           "hash": "18139455147949696568"
         },
         {
-          "file": "packages/core/tsconfig.esm.json",
+          "file": "packages/stock-screener/tsconfig.esm.json",
           "hash": "17139651704725119723"
         },
         {
-          "file": "packages/core/tsconfig.json",
+          "file": "packages/stock-screener/tsconfig.json",
           "hash": "12455434141492021329"
         },
         {
-          "file": "packages/core/typedoc.json",
+          "file": "packages/stock-screener/typedoc.json",
           "hash": "174229671463700184"
         }
       ]
-    }
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".bin/clean",
+        "hash": "11658597702654455368"
+      },
+      {
+        "file": ".bin/depcheck",
+        "hash": "818957538747789714"
+      },
+      {
+        "file": ".bin/docs",
+        "hash": "18292961365990077771"
+      },
+      {
+        "file": ".bin/release",
+        "hash": "12728750433947900478"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "15224698024415327018"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "13857813648536726910"
+      },
+      {
+        "file": ".eslintrc.js",
+        "hash": "13593529134528136490"
+      },
+      {
+        "file": ".github/ISSUE_TEMPLATE/bug.md",
+        "hash": "10568866426236474645"
+      },
+      {
+        "file": ".github/ISSUE_TEMPLATE/feature_request.md",
+        "hash": "2654980801398947370"
+      },
+      {
+        "file": ".github/dependabot.yml",
+        "hash": "6572170332587527740"
+      },
+      {
+        "file": ".github/pull_request_template.md",
+        "hash": "10250244320450370981"
+      },
+      {
+        "file": ".github/workflows/docs.yml",
+        "hash": "11882333970797314944"
+      },
+      {
+        "file": ".github/workflows/github-pages.yml",
+        "hash": "798982074529154136"
+      },
+      {
+        "file": ".github/workflows/nodejs.yml",
+        "hash": "13901565667510895638"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "11170586738084933006"
+      },
+      {
+        "file": ".husky/pre-commit",
+        "hash": "13469207043343598078"
+      },
+      {
+        "file": ".npmignore",
+        "hash": "18056334735872647162"
+      },
+      {
+        "file": ".npmrc",
+        "hash": "16102865510183352886"
+      },
+      {
+        "file": ".nvmrc",
+        "hash": "4400159139668804120"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "11638209859518646535"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "14559272747432021178"
+      },
+      {
+        "file": ".vscode/settings.json",
+        "hash": "10390736458109205806"
+      },
+      {
+        "file": "CODE_OF_CONDUCT.md",
+        "hash": "13342987898961666866"
+      },
+      {
+        "file": "GITHUB_PAGES_SETUP.md",
+        "hash": "10486820522458018858"
+      },
+      {
+        "file": "LICENSE",
+        "hash": "1872576125861680257"
+      },
+      {
+        "file": "PUBLISHING.md",
+        "hash": "9665138857054821049"
+      },
+      {
+        "file": "README.md",
+        "hash": "13088327992367718388"
+      },
+      {
+        "file": "babel.config.js",
+        "hash": "2289699371279952991"
+      },
+      {
+        "file": "config/typedoc.js",
+        "hash": "14605462696147020944"
+      },
+      {
+        "file": "config/typedoc.packages.json",
+        "hash": "4034039031077207821"
+      },
+      {
+        "file": "examples/README.md",
+        "hash": "12198603789604387207"
+      },
+      {
+        "file": "examples/analyze-stock.sh",
+        "hash": "8377015375131856928"
+      },
+      {
+        "file": "examples/comprehensive-demo.js",
+        "hash": "7582380785453113632"
+      },
+      {
+        "file": "examples/comprehensive-demo.ts",
+        "hash": "8451858758123160233"
+      },
+      {
+        "file": "examples/run-demo.sh",
+        "hash": "15874751894577518357"
+      },
+      {
+        "file": "examples/single-stock-analysis.js",
+        "hash": "8095653109595215010"
+      },
+      {
+        "file": "examples/single-stock-analysis.ts",
+        "hash": "14119655078594538908"
+      },
+      {
+        "file": "global.d.ts",
+        "hash": "14274473339422334983"
+      },
+      {
+        "file": "jest.config.js",
+        "hash": "7577309450353479091"
+      },
+      {
+        "file": "lerna.json",
+        "hash": "16043083955558608338"
+      },
+      {
+        "file": "nx.json",
+        "hash": "14306609654782995249"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "13658050300469764851"
+      },
+      {
+        "file": "package.json",
+        "hash": "6476023293345567347"
+      },
+      {
+        "file": "scripts/serve-docs.sh",
+        "hash": "6122045927438647087"
+      },
+      {
+        "file": "tsconfig.eslint.json",
+        "hash": "9006676056171280949"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "16150058383600412081"
+      }
+    ]
   }
 }

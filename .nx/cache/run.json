@@ -1,29 +1,51 @@
 {
   "run": {
     "command": "lerna run docs",
-    "startTime": "2025-10-02T13:44:48.020Z",
-    "endTime": "2025-10-02T13:45:25.996Z",
+    "startTime": "2025-10-02T13:51:24.799Z",
+    "endTime": "2025-10-02T13:51:31.664Z",
     "inner": false
   },
   "tasks": [
-    {
-      "taskId": "@jongan69/stonksjs-finviz:docs",
-      "target": "docs",
-      "projectName": "@jongan69/stonksjs-finviz",
-      "hash": "12654837337070002806",
-      "startTime": "2025-10-02T13:44:48.628Z",
-      "endTime": "2025-10-02T13:44:57.329Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 0
-    },
     {
       "taskId": "@jongan69/stonksjs-finviz:build",
       "target": "build",
       "projectName": "@jongan69/stonksjs-finviz",
       "hash": "1537170234042867870",
-      "startTime": "2025-10-02T13:44:48.627Z",
-      "endTime": "2025-10-02T13:45:00.367Z",
+      "startTime": "2025-10-02T13:51:24.811Z",
+      "endTime": "2025-10-02T13:51:24.820Z",
+      "params": "",
+      "cacheStatus": "local-cache-hit",
+      "status": 0
+    },
+    {
+      "taskId": "@jongan69/stonksjs-quote:build",
+      "target": "build",
+      "projectName": "@jongan69/stonksjs-quote",
+      "hash": "3655025348693059413",
+      "startTime": "2025-10-02T13:51:24.823Z",
+      "endTime": "2025-10-02T13:51:24.831Z",
+      "params": "",
+      "cacheStatus": "local-cache-hit",
+      "status": 0
+    },
+    {
+      "taskId": "@jongan69/stonksjs-stock-screener:build",
+      "target": "build",
+      "projectName": "@jongan69/stonksjs-stock-screener",
+      "hash": "10387202278152748172",
+      "startTime": "2025-10-02T13:51:24.823Z",
+      "endTime": "2025-10-02T13:51:24.831Z",
+      "params": "",
+      "cacheStatus": "local-cache-hit",
+      "status": 0
+    },
+    {
+      "taskId": "@jongan69/stonksjs-core:docs",
+      "target": "docs",
+      "projectName": "@jongan69/stonksjs-core",
+      "hash": "4624884760912289320",
+      "startTime": "2025-10-02T13:51:24.832Z",
+      "endTime": "2025-10-02T13:51:30.986Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
@@ -33,8 +55,8 @@
       "target": "docs",
       "projectName": "@jongan69/stonksjs-quote",
       "hash": "15160471921385452482",
-      "startTime": "2025-10-02T13:45:00.426Z",
-      "endTime": "2025-10-02T13:45:16.201Z",
+      "startTime": "2025-10-02T13:51:24.832Z",
+      "endTime": "2025-10-02T13:51:31.241Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
@@ -44,41 +66,19 @@
       "target": "docs",
       "projectName": "@jongan69/stonksjs-stock-screener",
       "hash": "12577241081877398113",
-      "startTime": "2025-10-02T13:45:00.426Z",
-      "endTime": "2025-10-02T13:45:16.719Z",
+      "startTime": "2025-10-02T13:51:24.823Z",
+      "endTime": "2025-10-02T13:51:31.283Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
     },
     {
-      "taskId": "@jongan69/stonksjs-quote:build",
-      "target": "build",
-      "projectName": "@jongan69/stonksjs-quote",
-      "hash": "3655025348693059413",
-      "startTime": "2025-10-02T13:45:00.426Z",
-      "endTime": "2025-10-02T13:45:19.111Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 0
-    },
-    {
-      "taskId": "@jongan69/stonksjs-stock-screener:build",
-      "target": "build",
-      "projectName": "@jongan69/stonksjs-stock-screener",
-      "hash": "10387202278152748172",
-      "startTime": "2025-10-02T13:45:00.426Z",
-      "endTime": "2025-10-02T13:45:19.270Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 0
-    },
-    {
-      "taskId": "@jongan69/stonksjs-core:docs",
+      "taskId": "@jongan69/stonksjs-finviz:docs",
       "target": "docs",
-      "projectName": "@jongan69/stonksjs-core",
-      "hash": "4624884760912289320",
-      "startTime": "2025-10-02T13:45:19.282Z",
-      "endTime": "2025-10-02T13:45:25.981Z",
+      "projectName": "@jongan69/stonksjs-finviz",
+      "hash": "12654837337070002806",
+      "startTime": "2025-10-02T13:51:24.811Z",
+      "endTime": "2025-10-02T13:51:31.661Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
