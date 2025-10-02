@@ -1,0 +1,25 @@
+
+> @jongan69/stonksjs-stock-screener@4.0.1 docs
+> typedoc --options typedoc.json
+
+[error] The plugin typedoc-plugin-markdown could not be loaded.
+[error] TypeError: getters[(option.type ?? ParameterType.String)] is not a function
+    at getDefaultValue (/Users/jonathangan/Desktop/Code/stonksjs/packages/stock-screener/node_modules/typedoc/dist/lib/utils/options/declaration.js:243:56)
+    at Options.addDeclaration (/Users/jonathangan/Desktop/Code/stonksjs/packages/stock-screener/node_modules/typedoc/dist/lib/utils/options/options.js:131:76)
+    at file:///Users/jonathangan/Desktop/Code/stonksjs/node_modules/typedoc-plugin-markdown/dist/index.js:24:21
+    at Array.forEach (<anonymous>)
+    at load (file:///Users/jonathangan/Desktop/Code/stonksjs/node_modules/typedoc-plugin-markdown/dist/index.js:23:34)
+    at loadPlugins (/Users/jonathangan/Desktop/Code/stonksjs/packages/stock-screener/node_modules/typedoc/dist/lib/utils/plugins.js:31:23)
+    at async Application.bootstrapWithPlugins (/Users/jonathangan/Desktop/Code/stonksjs/packages/stock-screener/node_modules/typedoc/dist/lib/application.js:102:9)
+    at async run (/Users/jonathangan/Desktop/Code/stonksjs/packages/stock-screener/node_modules/typedoc/dist/lib/cli.js:56:5)
+TypeDoc exiting with unexpected error:
+TypeError: getters[(option.type ?? ParameterType.String)] is not a function
+    at getDefaultValue (/Users/jonathangan/Desktop/Code/stonksjs/packages/stock-screener/node_modules/typedoc/dist/lib/utils/options/declaration.js:243:56)
+    at Options.reset (/Users/jonathangan/Desktop/Code/stonksjs/packages/stock-screener/node_modules/typedoc/dist/lib/utils/options/options.js:103:84)
+    at Application.bootstrap (/Users/jonathangan/Desktop/Code/stonksjs/packages/stock-screener/node_modules/typedoc/dist/lib/application.js:118:22)
+    at Application.bootstrapWithPlugins (/Users/jonathangan/Desktop/Code/stonksjs/packages/stock-screener/node_modules/typedoc/dist/lib/application.js:103:14)
+    at async run (/Users/jonathangan/Desktop/Code/stonksjs/packages/stock-screener/node_modules/typedoc/dist/lib/cli.js:56:5)
+npm ERR! Lifecycle script `docs` failed with error: 
+npm ERR! Error: command failed 
+npm ERR!   in workspace: @jongan69/stonksjs-stock-screener@4.0.1 
+npm ERR!   at location: /Users/jonathangan/Desktop/Code/stonksjs/packages/stock-screener 

@@ -1,8 +1,8 @@
-import finviz from '@stonksjs/finviz';
+import finviz from '@jongan69/stonksjs-finviz';
 import Quote from '../Quote';
 import mockQuote from '../__fixtures__/quote';
 
-jest.mock('@stonksjs/finviz');
+jest.mock('@jongan69/stonksjs-finviz');
 
 describe('Quote', () => {
   let quote;

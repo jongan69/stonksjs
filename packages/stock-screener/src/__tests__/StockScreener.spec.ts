@@ -1,8 +1,8 @@
-import finviz from '@stonksjs/finviz';
+import finviz from '@jongan69/stonksjs-finviz';
 import { StockScreener } from '../StockScreener';
 import filters from '../__fixtures__/filters';
 
-jest.mock('@stonksjs/finviz');
+jest.mock('@jongan69/stonksjs-finviz');
 
 const methods = [
   'getTopGainers',

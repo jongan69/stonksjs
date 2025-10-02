@@ -1,6 +1,46 @@
+#!/bin/bash
+
+# Serve documentation locally for development
+# This script builds the docs and serves them locally
+
+set -e
+
+echo "🚀 Building and serving stonksjs documentation locally..."
+
+# Get the directory of this script
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
+
+# Change to project directory
+cd "$PROJECT_DIR"
+
+echo "📁 Project directory: $PROJECT_DIR"
+
+# Check if Node.js is available
+if ! command -v node &> /dev/null; then
+    echo "❌ Node.js is not installed or not in PATH"
+    exit 1
+fi
+
+# Install dependencies if needed
+if [ ! -d "node_modules" ]; then
+    echo "📦 Installing dependencies..."
+    npm install
+fi
+
+# Build packages
+echo "🔨 Building packages..."
+npm run build
+
+# Generate documentation
+echo "📚 Generating documentation..."
+npm run docs
+
+# Create custom index page
+echo "🎨 Creating custom index page..."
+cat > docs/index.html << 'EOF'
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +49,6 @@
     <link rel="stylesheet" href="assets/highlight.css">
     <link rel="stylesheet" href="assets/custom.css">
 </head>
-
 <body>
     <div class="container">
         <header>
@@ -17,12 +56,11 @@
             <h1>@jongan69/stonksjs</h1>
             <p class="subtitle">Reliable algotrading utilities written in node</p>
         </header>
-
+        
         <main>
             <section class="hero">
                 <h2>📊 Comprehensive Stock Analysis Tools</h2>
-                <p>Access real-time stock data, screeners, and financial metrics through our powerful Node.js ecosystem.
-                </p>
+                <p>Access real-time stock data, screeners, and financial metrics through our powerful Node.js ecosystem.</p>
             </section>
 
             <section class="packages">
@@ -31,22 +69,22 @@
                     <div class="package-card">
                         <h3>@jongan69/stonksjs-core</h3>
                         <p>Single point of entry for all stonksjs packages</p>
-                        <a href="modules/_jongan69_stonksjs-core.html" class="btn">View API</a>
+                        <a href="modules/_stonksjs_core.html" class="btn">View API</a>
                     </div>
                     <div class="package-card">
                         <h3>@jongan69/stonksjs-finviz</h3>
                         <p>Unofficial Finviz API for stock data</p>
-                        <a href="modules/_jongan69_stonksjs-finviz.html" class="btn">View API</a>
+                        <a href="modules/_stonksjs_finviz.html" class="btn">View API</a>
                     </div>
                     <div class="package-card">
                         <h3>@jongan69/stonksjs-quote</h3>
                         <p>Detailed, real-time stock quote data</p>
-                        <a href="modules/_jongan69_stonksjs-quote.html" class="btn">View API</a>
+                        <a href="modules/_stonksjs_quote.html" class="btn">View API</a>
                     </div>
                     <div class="package-card">
                         <h3>@jongan69/stonksjs-stock-screener</h3>
                         <p>Pre-defined industry standard stock screeners</p>
-                        <a href="modules/_jongan69_stonksjs-stock-screener.html" class="btn">View API</a>
+                        <a href="modules/_stonksjs_stock_screener.html" class="btn">View API</a>
                     </div>
                 </div>
             </section>
@@ -88,15 +126,6 @@ import { finviz, quote, stockScreener } from '@jongan69/stonksjs-core';</code></
                     <li>📱 Cross-platform compatibility</li>
                 </ul>
             </section>
-
-            <section class="api-docs">
-                <h2>📖 API Documentation</h2>
-                <div class="api-links">
-                    <a href="modules.html" class="btn">All Modules</a>
-                    <a href="classes.html" class="btn">All Classes</a>
-                    <a href="hierarchy.html" class="btn">Type Hierarchy</a>
-                </div>
-            </section>
         </main>
 
         <footer>
@@ -109,5 +138,29 @@ import { finviz, quote, stockScreener } from '@jongan69/stonksjs-core';</code></
         </footer>
     </div>
 </body>
-
 </html>
+EOF
+
+# Check if serve is available
+if command -v serve &> /dev/null; then
+    echo "🌐 Starting local server..."
+    echo "📖 Documentation available at: http://localhost:3000"
+    echo "🛑 Press Ctrl+C to stop the server"
+    serve docs -p 3000
+elif command -v python3 &> /dev/null; then
+    echo "🌐 Starting Python HTTP server..."
+    echo "📖 Documentation available at: http://localhost:8000"
+    echo "🛑 Press Ctrl+C to stop the server"
+    cd docs && python3 -m http.server 8000
+elif command -v python &> /dev/null; then
+    echo "🌐 Starting Python HTTP server..."
+    echo "📖 Documentation available at: http://localhost:8000"
+    echo "🛑 Press Ctrl+C to stop the server"
+    cd docs && python -m SimpleHTTPServer 8000
+else
+    echo "✅ Documentation built successfully!"
+    echo "📁 Open docs/index.html in your browser to view the documentation"
+    echo "💡 Tip: Install 'serve' for a better local development experience:"
+    echo "   npm install -g serve"
+    echo "   Then run: serve docs"
+fi

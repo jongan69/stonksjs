@@ -37,6 +37,7 @@
     "release": ".bin/release",
     "docs": ".bin/docs",
     "docs:serve": "docsify serve docs",
+    "docs:local": "./scripts/serve-docs.sh",
     "create": ".bin/create-package",
     "build": "lerna run build"
   },

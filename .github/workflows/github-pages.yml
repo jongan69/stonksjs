@@ -1,0 +1,154 @@
+# GitHub Pages deployment workflow
+# This workflow builds and deploys the documentation to GitHub Pages
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  release:
+    types: [published]
+  workflow_dispatch: # Allow manual triggering
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetch all history for proper versioning
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build packages
+        run: npm run build
+
+      - name: Generate documentation
+        run: npm run docs
+
+      - name: Create index page
+        run: |
+          echo '<!DOCTYPE html>' > docs/index.html
+          echo '<html lang="en">' >> docs/index.html
+          echo '<head>' >> docs/index.html
+          echo '    <meta charset="UTF-8">' >> docs/index.html
+          echo '    <meta name="viewport" content="width=device-width, initial-scale=1.0">' >> docs/index.html
+          echo '    <title>@jongan69/stonksjs - Documentation</title>' >> docs/index.html
+          echo '    <link rel="stylesheet" href="assets/style.css">' >> docs/index.html
+          echo '    <link rel="stylesheet" href="assets/highlight.css">' >> docs/index.html
+          echo '    <link rel="stylesheet" href="assets/custom.css">' >> docs/index.html
+          echo '</head>' >> docs/index.html
+          echo '<body>' >> docs/index.html
+          echo '    <div class="container">' >> docs/index.html
+          echo '        <header>' >> docs/index.html
+          echo '            <img src="assets/logo.svg" alt="stonksjs" class="logo">' >> docs/index.html
+          echo '            <h1>@jongan69/stonksjs</h1>' >> docs/index.html
+          echo '            <p class="subtitle">Reliable algotrading utilities written in node</p>' >> docs/index.html
+          echo '        </header>' >> docs/index.html
+          echo '        <main>' >> docs/index.html
+          echo '            <section class="hero">' >> docs/index.html
+          echo '                <h2>📊 Comprehensive Stock Analysis Tools</h2>' >> docs/index.html
+          echo '                <p>Access real-time stock data, screeners, and financial metrics through our powerful Node.js ecosystem.</p>' >> docs/index.html
+          echo '            </section>' >> docs/index.html
+          echo '            <section class="packages">' >> docs/index.html
+          echo '                <h2>📦 Available Packages</h2>' >> docs/index.html
+          echo '                <div class="package-grid">' >> docs/index.html
+          echo '                    <div class="package-card">' >> docs/index.html
+          echo '                        <h3>@jongan69/stonksjs-core</h3>' >> docs/index.html
+          echo '                        <p>Single point of entry for all stonksjs packages</p>' >> docs/index.html
+          echo '                        <a href="modules/_jongan69_stonksjs-core.html" class="btn">View API</a>' >> docs/index.html
+          echo '                    </div>' >> docs/index.html
+          echo '                    <div class="package-card">' >> docs/index.html
+          echo '                        <h3>@jongan69/stonksjs-finviz</h3>' >> docs/index.html
+          echo '                        <p>Unofficial Finviz API for stock data</p>' >> docs/index.html
+          echo '                        <a href="modules/_jongan69_stonksjs-finviz.html" class="btn">View API</a>' >> docs/index.html
+          echo '                    </div>' >> docs/index.html
+          echo '                    <div class="package-card">' >> docs/index.html
+          echo '                        <h3>@jongan69/stonksjs-quote</h3>' >> docs/index.html
+          echo '                        <p>Detailed, real-time stock quote data</p>' >> docs/index.html
+          echo '                        <a href="modules/_jongan69_stonksjs-quote.html" class="btn">View API</a>' >> docs/index.html
+          echo '                    </div>' >> docs/index.html
+          echo '                    <div class="package-card">' >> docs/index.html
+          echo '                        <h3>@jongan69/stonksjs-stock-screener</h3>' >> docs/index.html
+          echo '                        <p>Pre-defined industry standard stock screeners</p>' >> docs/index.html
+          echo '                        <a href="modules/_jongan69_stonksjs-stock-screener.html" class="btn">View API</a>' >> docs/index.html
+          echo '                    </div>' >> docs/index.html
+          echo '                </div>' >> docs/index.html
+          echo '            </section>' >> docs/index.html
+          echo '            <section class="quick-start">' >> docs/index.html
+          echo '                <h2>🚀 Quick Start</h2>' >> docs/index.html
+          echo '                <div class="code-block">' >> docs/index.html
+          echo '                    <pre><code>npm install @jongan69/stonksjs-core' >> docs/index.html
+          echo '' >> docs/index.html
+          echo 'const { finviz, quote, stockScreener } = require("@jongan69/stonksjs-core");</code></pre>' >> docs/index.html
+          echo '                </div>' >> docs/index.html
+          echo '            </section>' >> docs/index.html
+          echo '            <section class="examples">' >> docs/index.html
+          echo '                <h2>📚 Examples</h2>' >> docs/index.html
+          echo '                <div class="example-links">' >> docs/index.html
+          echo '                    <a href="https://github.com/jongan69/stonksjs/tree/main/examples" class="btn btn-secondary">📊 Comprehensive Demo</a>' >> docs/index.html
+          echo '                    <a href="https://github.com/jongan69/stonksjs/tree/main/examples" class="btn btn-secondary">🔍 Single Stock Analysis</a>' >> docs/index.html
+          echo '                </div>' >> docs/index.html
+          echo '            </section>' >> docs/index.html
+          echo '            <section class="features">' >> docs/index.html
+          echo '                <h2>✨ Features</h2>' >> docs/index.html
+          echo '                <ul class="feature-list">' >> docs/index.html
+          echo '                    <li>📈 Real-time stock quotes and financial data</li>' >> docs/index.html
+          echo '                    <li>🔍 40+ pre-defined stock screeners</li>' >> docs/index.html
+          echo '                    <li>📊 Technical indicators and analysis</li>' >> docs/index.html
+          echo '                    <li>🏭 Sector and industry analysis</li>' >> docs/index.html
+          echo '                    <li>💾 Cached data for better performance</li>' >> docs/index.html
+          echo '                    <li>🚀 TypeScript support</li>' >> docs/index.html
+          echo '                    <li>📱 Cross-platform compatibility</li>' >> docs/index.html
+          echo '                </ul>' >> docs/index.html
+          echo '            </section>' >> docs/index.html
+          echo '        </main>' >> docs/index.html
+          echo '        <footer>' >> docs/index.html
+          echo '            <p>Built with ❤️ by <a href="https://github.com/jongan69">@jongan69</a></p>' >> docs/index.html
+          echo '            <p><a href="https://github.com/jongan69/stonksjs">GitHub</a> | <a href="https://www.npmjs.com/org/jongan69">npm</a> | <a href="https://github.com/jongan69/stonksjs/issues">Issues</a></p>' >> docs/index.html
+          echo '        </footer>' >> docs/index.html
+          echo '    </div>' >> docs/index.html
+          echo '</body>' >> docs/index.html
+          echo '</html>' >> docs/index.html
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './docs'
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
