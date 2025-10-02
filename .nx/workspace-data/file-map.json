@@ -6,188 +6,188 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".bin/depcheck",
-        "hash": "818957538747789714"
-      },
-      {
-        "file": ".vscode/settings.json",
-        "hash": "10390736458109205806"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "11170586738084933006"
-      },
-      {
-        "file": "examples/run-demo.sh",
-        "hash": "15874751894577518357"
-      },
-      {
-        "file": "config/typedoc.js",
-        "hash": "14605462696147020944"
-      },
-      {
-        "file": ".github/workflows/nodejs.yml",
-        "hash": "16380950339736206502"
-      },
-      {
-        "file": "PUBLISHING.md",
-        "hash": "9665138857054821049"
-      },
-      {
-        "file": "LICENSE",
-        "hash": "1872576125861680257"
-      },
-      {
-        "file": ".bin/docs",
-        "hash": "18292961365990077771"
-      },
-      {
-        "file": "babel.config.js",
-        "hash": "2289699371279952991"
-      },
-      {
-        "file": "examples/comprehensive-demo.js",
-        "hash": "7582380785453113632"
-      },
-      {
-        "file": "package.json",
-        "hash": "6476023293345567347"
-      },
-      {
-        "file": "nx.json",
-        "hash": "14306609654782995249"
-      },
-      {
         "file": "package-lock.json",
         "hash": "13658050300469764851"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "11638209859518646535"
-      },
-      {
-        "file": ".editorconfig",
-        "hash": "15224698024415327018"
-      },
-      {
-        "file": "CODE_OF_CONDUCT.md",
-        "hash": "13342987898961666866"
-      },
-      {
-        "file": ".github/dependabot.yml",
-        "hash": "6572170332587527740"
-      },
-      {
-        "file": "tsconfig.eslint.json",
-        "hash": "9006676056171280949"
-      },
-      {
-        "file": ".github/workflows/github-pages.yml",
-        "hash": "798982074529154136"
-      },
-      {
-        "file": "config/typedoc.packages.json",
-        "hash": "4034039031077207821"
-      },
-      {
-        "file": ".husky/pre-commit",
-        "hash": "13469207043343598078"
-      },
-      {
-        "file": ".github/ISSUE_TEMPLATE/bug.md",
-        "hash": "10568866426236474645"
-      },
-      {
-        "file": "jest.config.js",
-        "hash": "7577309450353479091"
-      },
-      {
-        "file": "examples/comprehensive-demo.ts",
-        "hash": "8451858758123160233"
-      },
-      {
-        "file": ".github/pull_request_template.md",
-        "hash": "10250244320450370981"
-      },
-      {
-        "file": ".nvmrc",
-        "hash": "4400159139668804120"
       },
       {
         "file": "scripts/serve-docs.sh",
         "hash": "6122045927438647087"
       },
       {
-        "file": "examples/single-stock-analysis.js",
-        "hash": "8095653109595215010"
+        "file": "examples/run-demo.sh",
+        "hash": "15874751894577518357"
+      },
+      {
+        "file": "CODE_OF_CONDUCT.md",
+        "hash": "13342987898961666866"
+      },
+      {
+        "file": "LICENSE",
+        "hash": "1872576125861680257"
+      },
+      {
+        "file": ".editorconfig",
+        "hash": "15224698024415327018"
+      },
+      {
+        "file": ".github/workflows/github-pages.yml",
+        "hash": "798982074529154136"
+      },
+      {
+        "file": ".github/workflows/docs.yml",
+        "hash": "11882333970797314944"
+      },
+      {
+        "file": ".bin/docs",
+        "hash": "18292961365990077771"
+      },
+      {
+        "file": ".github/pull_request_template.md",
+        "hash": "10250244320450370981"
       },
       {
         "file": "examples/README.md",
         "hash": "12198603789604387207"
       },
       {
-        "file": ".github/ISSUE_TEMPLATE/feature_request.md",
-        "hash": "2654980801398947370"
+        "file": ".vscode/settings.json",
+        "hash": "10390736458109205806"
       },
       {
-        "file": "GITHUB_PAGES_SETUP.md",
-        "hash": "10486820522458018858"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "14559272747432021178"
-      },
-      {
-        "file": ".github/workflows/docs.yml",
-        "hash": "7903487737002329699"
-      },
-      {
-        "file": ".eslintignore",
-        "hash": "13857813648536726910"
-      },
-      {
-        "file": "examples/analyze-stock.sh",
-        "hash": "8377015375131856928"
-      },
-      {
-        "file": ".eslintrc.js",
-        "hash": "13593529134528136490"
-      },
-      {
-        "file": "lerna.json",
-        "hash": "16043083955558608338"
-      },
-      {
-        "file": "tsconfig.json",
-        "hash": "16150058383600412081"
-      },
-      {
-        "file": "examples/single-stock-analysis.ts",
-        "hash": "14119655078594538908"
-      },
-      {
-        "file": ".bin/clean",
-        "hash": "11658597702654455368"
+        "file": "babel.config.js",
+        "hash": "2289699371279952991"
       },
       {
         "file": ".bin/release",
         "hash": "12728750433947900478"
       },
       {
+        "file": "examples/comprehensive-demo.ts",
+        "hash": "8451858758123160233"
+      },
+      {
+        "file": "tsconfig.eslint.json",
+        "hash": "9006676056171280949"
+      },
+      {
+        "file": "lerna.json",
+        "hash": "16043083955558608338"
+      },
+      {
+        "file": ".github/ISSUE_TEMPLATE/bug.md",
+        "hash": "10568866426236474645"
+      },
+      {
+        "file": "package.json",
+        "hash": "6476023293345567347"
+      },
+      {
+        "file": ".eslintrc.js",
+        "hash": "13593529134528136490"
+      },
+      {
         "file": ".npmignore",
         "hash": "18056334735872647162"
+      },
+      {
+        "file": ".husky/pre-commit",
+        "hash": "13469207043343598078"
+      },
+      {
+        "file": "config/typedoc.packages.json",
+        "hash": "4034039031077207821"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "11638209859518646535"
+      },
+      {
+        "file": "PUBLISHING.md",
+        "hash": "9665138857054821049"
+      },
+      {
+        "file": ".github/dependabot.yml",
+        "hash": "6572170332587527740"
+      },
+      {
+        "file": "global.d.ts",
+        "hash": "14274473339422334983"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "14559272747432021178"
+      },
+      {
+        "file": "examples/single-stock-analysis.ts",
+        "hash": "14119655078594538908"
+      },
+      {
+        "file": "examples/comprehensive-demo.js",
+        "hash": "7582380785453113632"
+      },
+      {
+        "file": "examples/analyze-stock.sh",
+        "hash": "8377015375131856928"
+      },
+      {
+        "file": "jest.config.js",
+        "hash": "7577309450353479091"
+      },
+      {
+        "file": "examples/single-stock-analysis.js",
+        "hash": "8095653109595215010"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "13857813648536726910"
+      },
+      {
+        "file": ".bin/clean",
+        "hash": "11658597702654455368"
+      },
+      {
+        "file": "nx.json",
+        "hash": "14306609654782995249"
+      },
+      {
+        "file": ".github/workflows/nodejs.yml",
+        "hash": "13901565667510895638"
       },
       {
         "file": ".npmrc",
         "hash": "16102865510183352886"
       },
       {
+        "file": "GITHUB_PAGES_SETUP.md",
+        "hash": "10486820522458018858"
+      },
+      {
+        "file": ".bin/depcheck",
+        "hash": "818957538747789714"
+      },
+      {
+        "file": ".nvmrc",
+        "hash": "4400159139668804120"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "11170586738084933006"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "16150058383600412081"
+      },
+      {
+        "file": "config/typedoc.js",
+        "hash": "14605462696147020944"
+      },
+      {
         "file": "README.md",
         "hash": "13088327992367718388"
       },
       {
-        "file": "global.d.ts",
-        "hash": "14274473339422334983"
+        "file": ".github/ISSUE_TEMPLATE/feature_request.md",
+        "hash": "2654980801398947370"
       }
     ],
     "projectFileMap": {
