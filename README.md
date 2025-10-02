@@ -57,6 +57,26 @@ The primary objective of this project are:
 
 Installation, usage, and API docs can be found in each scoped package directory.
 
+### Quick Start with Examples
+
+The easiest way to get started is with our comprehensive examples:
+
+```bash
+# Run the interactive demo
+./examples/run-demo.sh
+
+# Or run directly
+node examples/comprehensive-demo.js
+```
+
+This will demonstrate all the functionality across the stonksjs ecosystem,
+including:
+
+- 📊 Stock quote retrieval with detailed metrics
+- 🔍 40+ pre-defined stock screeners
+- 💾 Cached quote data for better performance
+- 🚀 Advanced portfolio and sentiment analysis
+
 | Name                                                                                               | Description                                                  | Version                                                                                                    |
 | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------- |
 | [@stonksjs/core](https://github.com/nielse63/stonksjs/tree/main/packages/core)                     | Single point of entry for all stonksjs packages              | ![npm (scoped)](https://img.shields.io/npm/v/@stonksjs/core?color=brightgreen&style=flat-square)           |
@@ -70,7 +90,7 @@ Installation, usage, and API docs can be found in each scoped package directory.
 
 #### Prerequisites
 
-This project requires node `v16.20.1`.
+This project requires node `v18.0.0` or higher.
 
 #### Installation
 
@@ -93,6 +113,26 @@ npm test
 # run with coverage
 npm test -- --coverage
 ```
+
+### Examples
+
+Comprehensive examples are available in the `examples/` directory:
+
+```bash
+# Run the interactive demo script
+./examples/run-demo.sh
+
+# Or run examples directly
+node examples/comprehensive-demo.js        # JavaScript version
+npx ts-node examples/comprehensive-demo.ts # TypeScript version
+```
+
+The examples demonstrate:
+
+- All package functionality with real-world usage
+- Performance optimization techniques
+- Advanced analysis patterns
+- Error handling best practices
 
 ### Release
 

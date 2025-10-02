@@ -11,14 +11,47 @@ class Finviz {
   quoteCache: Map<string, Quote>;
   screenerCache: Map<string, string[]>;
   screenrerListCache: Set<Screener>;
+  lastRequestTime = 0;
+  minRequestInterval = 1000; // 1 second between requests
 
   constructor() {
     this.api = axios.create({
       baseURL: FINVIZ_URL,
+      headers: {
+        'User-Agent':
+          'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        Accept:
+          'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.9',
+        'Accept-Encoding': 'gzip, deflate, br',
+        DNT: '1',
+        Connection: 'keep-alive',
+        'Upgrade-Insecure-Requests': '1',
+        'Sec-Fetch-Dest': 'document',
+        'Sec-Fetch-Mode': 'navigate',
+        'Sec-Fetch-Site': 'none',
+        'Cache-Control': 'max-age=0',
+      },
+      timeout: 10000, // 10 second timeout
     });
     this.quoteCache = new Map();
     this.screenerCache = new Map();
     this.screenrerListCache = new Set();
+  }
+
+  /**
+   * Ensures minimum time between requests to avoid rate limiting
+   */
+  private async rateLimit(): Promise<void> {
+    const now = Date.now();
+    const timeSinceLastRequest = now - this.lastRequestTime;
+
+    if (timeSinceLastRequest < this.minRequestInterval) {
+      const delay = this.minRequestInterval - timeSinceLastRequest;
+      await new Promise((resolve) => setTimeout(resolve, delay));
+    }
+
+    this.lastRequestTime = Date.now();
   }
 
   /**
@@ -62,6 +95,9 @@ class Finviz {
     if (this.quoteCache.has(symbol)) {
       return this.quoteCache.get(symbol);
     }
+
+    await this.rateLimit();
+
     const url = `/quote.ashx?t=${symbol}`;
     const response = await this.api.get(url);
     const data = Finviz.parseQuoteData(response.data);
@@ -96,6 +132,9 @@ class Finviz {
     if (this.screenrerListCache.size) {
       return [...this.screenrerListCache];
     }
+
+    await this.rateLimit();
+
     const { data: html } = await this.api.get(SCREENER_URL);
     const $ = load(html);
     const options = $('#signalSelect > option');
@@ -143,6 +182,9 @@ class Finviz {
     if (this.screenerCache.has(url)) {
       return this.screenerCache.get(url) as string[];
     }
+
+    await this.rateLimit();
+
     const { data } = await this.api.get(url);
     const results = Finviz.parseScreenerResponse(data);
     this.screenerCache.set(url, results);

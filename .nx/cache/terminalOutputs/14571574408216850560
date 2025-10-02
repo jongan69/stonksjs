@@ -1,0 +1,12 @@
+
+> @stonksjs/core@3.0.1 build
+> rm -rf dist && npm run build:esm && npm run build:cjs
+
+
+> @stonksjs/core@3.0.1 build:esm
+> tsc -p ./tsconfig.esm.json
+
+
+> @stonksjs/core@3.0.1 build:cjs
+> tsc -p ./tsconfig.cjs.json
+

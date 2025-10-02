@@ -1,6 +1,6 @@
 {
-  "name": "@stonksjs/core",
-  "version": "3.0.1",
+  "name": "@jongan69/stonksjs-core",
+  "version": "4.0.0",
   "description": "Single point of entry for all stonksjs packages",
   "keywords": [
     "robinhood",
@@ -10,8 +10,8 @@
     "dividends",
     "finance"
   ],
-  "author": "Erik Nielsen <erik@312development.com>",
-  "homepage": "https://github.com/nielse63/stonksjs/tree/main/packages/core#readme",
+  "author": "Jonathan Gan <jongan69@users.noreply.github.com>",
+  "homepage": "https://github.com/jongan69/stonksjs/tree/main/packages/core#readme",
   "license": "ISC",
   "types": "./dist/cjs/types/index.d.ts",
   "main": "./dist/cjs/index.js",
@@ -35,7 +35,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nielse63/stonksjs.git"
+    "url": "git+https://github.com/jongan69/stonksjs.git"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
@@ -46,12 +46,12 @@
     "docs": "typedoc --options typedoc.json"
   },
   "bugs": {
-    "url": "https://github.com/nielse63/stonksjs/issues"
+    "url": "https://github.com/jongan69/stonksjs/issues"
   },
   "dependencies": {
-    "@stonksjs/finviz": "file:../finviz",
-    "@stonksjs/quote": "file:../quote",
-    "@stonksjs/stock-screener": "file:../stock-screener"
+    "@jongan69/stonksjs-finviz": "file:../finviz",
+    "@jongan69/stonksjs-quote": "file:../quote",
+    "@jongan69/stonksjs-stock-screener": "file:../stock-screener"
   },
   "devDependencies": {
     "typedoc": "^0.24.8",
