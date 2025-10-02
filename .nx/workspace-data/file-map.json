@@ -6,36 +6,76 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".bin/release",
-        "hash": "12728750433947900478"
+        "file": "docs/variables/_stonksjs_quote.quote-1.html",
+        "hash": "4007444578570406380"
       },
       {
-        "file": "docs/classes/_stonksjs_core.quote.Quote.html",
-        "hash": "6114871544538618369"
+        "file": "config/typedoc.packages.json",
+        "hash": "6413295961875668707"
       },
       {
-        "file": "docs/functions/_stonksjs_core.finviz.quote-1.html",
-        "hash": "9909179031605122675"
+        "file": "examples/README.md",
+        "hash": "10496238697553413370"
       },
       {
-        "file": "docs/types/_stonksjs_finviz.Quote-1.html",
-        "hash": "9096172008672564718"
+        "file": "docs/modules/_stonksjs_stock_screener.html",
+        "hash": "6193612042403517434"
       },
       {
-        "file": "docs/variables/_stonksjs_quote.getQuote.html",
-        "hash": "10225255365050202225"
+        "file": "LICENSE",
+        "hash": "1872576125861680257"
       },
       {
-        "file": "babel.config.js",
-        "hash": "2289699371279952991"
+        "file": "PUBLISHING.md",
+        "hash": "9665138857054821049"
       },
       {
-        "file": ".nvmrc",
-        "hash": "4400159139668804120"
+        "file": "docs/modules/_stonksjs_core.quote.html",
+        "hash": "11897525238283344860"
+      },
+      {
+        "file": ".vscode/settings.json",
+        "hash": "10390736458109205806"
+      },
+      {
+        "file": ".github/workflows/docs.yml",
+        "hash": "7903487737002329699"
+      },
+      {
+        "file": "CODE_OF_CONDUCT.md",
+        "hash": "13342987898961666866"
       },
       {
         "file": "docs/modules/_stonksjs_finviz.html",
         "hash": "7618680544374528533"
+      },
+      {
+        "file": "docs/assets/highlight.css",
+        "hash": "12488745571463020738"
+      },
+      {
+        "file": "docs/functions/_stonksjs_finviz.getScreener.html",
+        "hash": "8424434851721814607"
+      },
+      {
+        "file": "docs/assets/style.css",
+        "hash": "12055827826275023535"
+      },
+      {
+        "file": "docs/functions/_stonksjs_finviz.quote.html",
+        "hash": "17654864337998358560"
+      },
+      {
+        "file": "docs/classes/_stonksjs_core.stockScreener.StockScreener.html",
+        "hash": "9496199609548475802"
+      },
+      {
+        "file": ".bin/release",
+        "hash": "12728750433947900478"
+      },
+      {
+        "file": "lerna.json",
+        "hash": "6164684717546968869"
       },
       {
         "file": ".prettierignore",
@@ -46,296 +86,256 @@
         "hash": "18292961365990077771"
       },
       {
-        "file": "docs/functions/_stonksjs_core.finviz.getScreener.html",
-        "hash": "4186922610208689393"
-      },
-      {
-        "file": "docs/assets/highlight.css",
-        "hash": "12488745571463020738"
-      },
-      {
-        "file": "docs/modules/_stonksjs_stock_screener.html",
-        "hash": "6193612042403517434"
-      },
-      {
-        "file": "config/typedoc.packages.json",
-        "hash": "6413295961875668707"
-      },
-      {
-        "file": "global.d.ts",
-        "hash": "14274473339422334983"
-      },
-      {
-        "file": "docs/classes/_stonksjs_quote.Quote.html",
-        "hash": "17239280216313380608"
-      },
-      {
-        "file": "docs/classes/_stonksjs_finviz.Finviz.html",
-        "hash": "17029281987453156927"
-      },
-      {
-        "file": "docs/functions/_stonksjs_finviz.getScreenersList.html",
-        "hash": "1607159238728618641"
-      },
-      {
-        "file": "docs/variables/_stonksjs_core.stockScreener.default.html",
-        "hash": "9577205649577067102"
-      },
-      {
-        "file": "docs/variables/_stonksjs_finviz.default.html",
-        "hash": "7862621382867925470"
-      },
-      {
-        "file": "docs/classes/_stonksjs_core.stockScreener.StockScreener.html",
-        "hash": "9496199609548475802"
-      },
-      {
-        "file": "nx.json",
-        "hash": "14306609654782995249"
-      },
-      {
-        "file": "docs/modules/_stonksjs_core.quote.html",
-        "hash": "11897525238283344860"
-      },
-      {
-        "file": "docs/types/_stonksjs_stock_screener.Screener.html",
-        "hash": "3450959970264697307"
-      },
-      {
-        "file": ".bin/clean",
-        "hash": "11658597702654455368"
-      },
-      {
-        "file": ".github/ISSUE_TEMPLATE/feature_request.md",
-        "hash": "2654980801398947370"
-      },
-      {
-        "file": "examples/comprehensive-demo.ts",
-        "hash": "8451858758123160233"
-      },
-      {
-        "file": "CODE_OF_CONDUCT.md",
-        "hash": "13342987898961666866"
-      },
-      {
-        "file": "docs/classes/_stonksjs_stock_screener.StockScreener.html",
-        "hash": "16791113858968504679"
-      },
-      {
-        "file": "docs/types/_stonksjs_finviz.Screener-1.html",
-        "hash": "3371522413981860742"
-      },
-      {
-        "file": "tsconfig.eslint.json",
-        "hash": "9006676056171280949"
-      },
-      {
-        "file": "README.md",
-        "hash": "4940985283045775065"
-      },
-      {
-        "file": "examples/run-demo.sh",
-        "hash": "15874751894577518357"
-      },
-      {
-        "file": "docs/variables/_stonksjs_core.default.html",
-        "hash": "7431777711391785760"
-      },
-      {
-        "file": "docs/functions/_stonksjs_core.finviz.screener-1.html",
-        "hash": "5927126156608347467"
-      },
-      {
-        "file": ".github/dependabot.yml",
-        "hash": "6572170332587527740"
-      },
-      {
-        "file": "package.json",
-        "hash": "4784162445529154094"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "11415967467253854369"
-      },
-      {
-        "file": "docs/modules/_stonksjs_core.stockScreener.html",
-        "hash": "774139874433872940"
-      },
-      {
-        "file": "PUBLISHING.md",
-        "hash": "9665138857054821049"
-      },
-      {
-        "file": "examples/comprehensive-demo.js",
-        "hash": "7582380785453113632"
-      },
-      {
-        "file": "lerna.json",
-        "hash": "6164684717546968869"
-      },
-      {
-        "file": ".vscode/settings.json",
-        "hash": "10390736458109205806"
-      },
-      {
-        "file": ".github/pull_request_template.md",
-        "hash": "10250244320450370981"
-      },
-      {
-        "file": "docs/modules/_stonksjs_core.finviz.html",
-        "hash": "14855988848131631740"
-      },
-      {
-        "file": ".eslintignore",
-        "hash": "8635305116516012806"
-      },
-      {
-        "file": "docs/functions/_stonksjs_core.finviz.getScreenersList.html",
-        "hash": "17676119274930339786"
-      },
-      {
-        "file": "docs/assets/logo.svg",
-        "hash": "6045333258493401166"
-      },
-      {
-        "file": ".eslintrc.js",
-        "hash": "13593529134528136490"
-      },
-      {
-        "file": "docs/functions/_stonksjs_finviz.getQuote.html",
-        "hash": "1221976079041788245"
-      },
-      {
-        "file": ".bin/depcheck",
-        "hash": "818957538747789714"
-      },
-      {
-        "file": "docs/functions/_stonksjs_finviz.quote.html",
-        "hash": "17654864337998358560"
-      },
-      {
-        "file": "docs/assets/search.js",
-        "hash": "15273375605274150159"
-      },
-      {
-        "file": ".github/workflows/nodejs.yml",
-        "hash": "16380950339736206502"
-      },
-      {
-        "file": ".husky/pre-commit",
-        "hash": "13469207043343598078"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "6973082929898975359"
-      },
-      {
-        "file": ".github/workflows/docs.yml",
-        "hash": "7903487737002329699"
-      },
-      {
-        "file": "docs/functions/_stonksjs_finviz.getScreener.html",
-        "hash": "8424434851721814607"
-      },
-      {
-        "file": ".npmignore",
-        "hash": "18056334735872647162"
-      },
-      {
-        "file": "docs/variables/_stonksjs_core.finviz.Quote.html",
-        "hash": "992622520082966322"
-      },
-      {
-        "file": "docs/index.html",
-        "hash": "11890136232268106408"
-      },
-      {
-        "file": "docs/functions/_stonksjs_finviz.screener.html",
-        "hash": "3269778827828617015"
-      },
-      {
-        "file": "docs/assets/style.css",
-        "hash": "12055827826275023535"
-      },
-      {
-        "file": "docs/variables/_stonksjs_quote.quote-1.html",
-        "hash": "4007444578570406380"
-      },
-      {
-        "file": "docs/functions/_stonksjs_core.finviz.getQuote.html",
-        "hash": "1265153963999385678"
-      },
-      {
-        "file": "docs/modules/_stonksjs_core.html",
-        "hash": "12547084467311442630"
-      },
-      {
-        "file": "docs/variables/_stonksjs_core.quote.quote-1.html",
-        "hash": "17657257073725265119"
-      },
-      {
-        "file": "docs/.nojekyll",
-        "hash": "12301719336174243164"
-      },
-      {
-        "file": "docs/variables/_stonksjs_core.finviz.default.html",
-        "hash": "17886982886040033501"
-      },
-      {
-        "file": "config/typedoc.js",
-        "hash": "14605462696147020944"
-      },
-      {
-        "file": "examples/README.md",
-        "hash": "10496238697553413370"
-      },
-      {
-        "file": "tsconfig.json",
-        "hash": "16150058383600412081"
-      },
-      {
-        "file": "docs/variables/_stonksjs_core.quote.getQuote.html",
-        "hash": "1116313554430504962"
-      },
-      {
-        "file": "docs/variables/_stonksjs_stock_screener.default.html",
-        "hash": "6382581328394158266"
-      },
-      {
-        "file": "LICENSE",
-        "hash": "1872576125861680257"
-      },
-      {
-        "file": "docs/assets/main.js",
-        "hash": "18356059930250339039"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "14559272747432021178"
-      },
-      {
-        "file": "jest.config.js",
-        "hash": "7577309450353479091"
-      },
-      {
-        "file": ".github/ISSUE_TEMPLATE/bug.md",
-        "hash": "10568866426236474645"
-      },
-      {
-        "file": ".npmrc",
-        "hash": "16102865510183352886"
+        "file": ".nvmrc",
+        "hash": "4400159139668804120"
       },
       {
         "file": ".editorconfig",
         "hash": "15224698024415327018"
       },
       {
-        "file": "docs/classes/_stonksjs_core.finviz.Finviz.html",
-        "hash": "7194798330766332982"
+        "file": "tsconfig.eslint.json",
+        "hash": "9006676056171280949"
+      },
+      {
+        "file": "docs/variables/_stonksjs_quote.getQuote.html",
+        "hash": "10225255365050202225"
+      },
+      {
+        "file": "docs/variables/_stonksjs_core.quote.getQuote.html",
+        "hash": "1116313554430504962"
+      },
+      {
+        "file": "docs/functions/_stonksjs_finviz.screener.html",
+        "hash": "3269778827828617015"
+      },
+      {
+        "file": "examples/comprehensive-demo.js",
+        "hash": "7582380785453113632"
+      },
+      {
+        "file": "docs/functions/_stonksjs_core.finviz.getQuote.html",
+        "hash": "1265153963999385678"
+      },
+      {
+        "file": "docs/variables/_stonksjs_core.finviz.default.html",
+        "hash": "17886982886040033501"
+      },
+      {
+        "file": "docs/classes/_stonksjs_stock_screener.StockScreener.html",
+        "hash": "16791113858968504679"
+      },
+      {
+        "file": "docs/variables/_stonksjs_core.finviz.Quote.html",
+        "hash": "992622520082966322"
+      },
+      {
+        "file": "docs/types/_stonksjs_finviz.Quote-1.html",
+        "hash": "9096172008672564718"
+      },
+      {
+        "file": "docs/functions/_stonksjs_finviz.getQuote.html",
+        "hash": "1221976079041788245"
+      },
+      {
+        "file": "docs/variables/_stonksjs_core.default.html",
+        "hash": "7431777711391785760"
+      },
+      {
+        "file": "docs/functions/_stonksjs_finviz.getScreenersList.html",
+        "hash": "1607159238728618641"
+      },
+      {
+        "file": "docs/functions/_stonksjs_core.finviz.screener-1.html",
+        "hash": "5927126156608347467"
+      },
+      {
+        "file": "README.md",
+        "hash": "4940985283045775065"
+      },
+      {
+        "file": ".github/dependabot.yml",
+        "hash": "6572170332587527740"
+      },
+      {
+        "file": ".bin/depcheck",
+        "hash": "818957538747789714"
+      },
+      {
+        "file": "docs/functions/_stonksjs_core.finviz.quote-1.html",
+        "hash": "9909179031605122675"
+      },
+      {
+        "file": "docs/functions/_stonksjs_core.finviz.getScreenersList.html",
+        "hash": "17676119274930339786"
+      },
+      {
+        "file": "docs/classes/_stonksjs_quote.Quote.html",
+        "hash": "17239280216313380608"
+      },
+      {
+        "file": ".github/ISSUE_TEMPLATE/feature_request.md",
+        "hash": "2654980801398947370"
+      },
+      {
+        "file": ".eslintrc.js",
+        "hash": "13593529134528136490"
+      },
+      {
+        "file": "docs/variables/_stonksjs_core.quote.quote-1.html",
+        "hash": "17657257073725265119"
+      },
+      {
+        "file": "docs/modules/_stonksjs_core.stockScreener.html",
+        "hash": "774139874433872940"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "14559272747432021178"
+      },
+      {
+        "file": "global.d.ts",
+        "hash": "14274473339422334983"
       },
       {
         "file": "docs/modules/_stonksjs_quote.html",
         "hash": "4088177153953483922"
+      },
+      {
+        "file": "docs/variables/_stonksjs_finviz.default.html",
+        "hash": "7862621382867925470"
+      },
+      {
+        "file": ".npmignore",
+        "hash": "18056334735872647162"
+      },
+      {
+        "file": ".github/pull_request_template.md",
+        "hash": "10250244320450370981"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "8635305116516012806"
+      },
+      {
+        "file": "examples/comprehensive-demo.ts",
+        "hash": "8451858758123160233"
+      },
+      {
+        "file": "docs/modules/_stonksjs_core.html",
+        "hash": "12547084467311442630"
+      },
+      {
+        "file": "docs/assets/search.js",
+        "hash": "15273375605274150159"
+      },
+      {
+        "file": "docs/index.html",
+        "hash": "11890136232268106408"
+      },
+      {
+        "file": "config/typedoc.js",
+        "hash": "14605462696147020944"
+      },
+      {
+        "file": "docs/functions/_stonksjs_core.finviz.getScreener.html",
+        "hash": "4186922610208689393"
+      },
+      {
+        "file": "docs/modules/_stonksjs_core.finviz.html",
+        "hash": "14855988848131631740"
+      },
+      {
+        "file": "docs/types/_stonksjs_stock_screener.Screener.html",
+        "hash": "3450959970264697307"
+      },
+      {
+        "file": ".github/ISSUE_TEMPLATE/bug.md",
+        "hash": "10568866426236474645"
+      },
+      {
+        "file": ".bin/clean",
+        "hash": "11658597702654455368"
+      },
+      {
+        "file": "docs/assets/logo.svg",
+        "hash": "6045333258493401166"
+      },
+      {
+        "file": "package.json",
+        "hash": "4165425523363634654"
+      },
+      {
+        "file": "docs/classes/_stonksjs_core.finviz.Finviz.html",
+        "hash": "7194798330766332982"
+      },
+      {
+        "file": ".github/workflows/nodejs.yml",
+        "hash": "16380950339736206502"
+      },
+      {
+        "file": "docs/assets/main.js",
+        "hash": "18356059930250339039"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "16150058383600412081"
+      },
+      {
+        "file": "docs/types/_stonksjs_finviz.Screener-1.html",
+        "hash": "3371522413981860742"
+      },
+      {
+        "file": "docs/classes/_stonksjs_core.quote.Quote.html",
+        "hash": "6114871544538618369"
+      },
+      {
+        "file": "examples/run-demo.sh",
+        "hash": "15874751894577518357"
+      },
+      {
+        "file": "docs/variables/_stonksjs_stock_screener.default.html",
+        "hash": "6382581328394158266"
+      },
+      {
+        "file": "docs/variables/_stonksjs_core.stockScreener.default.html",
+        "hash": "9577205649577067102"
+      },
+      {
+        "file": "docs/.nojekyll",
+        "hash": "12301719336174243164"
+      },
+      {
+        "file": ".npmrc",
+        "hash": "16102865510183352886"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "6973082929898975359"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "11415967467253854369"
+      },
+      {
+        "file": ".husky/pre-commit",
+        "hash": "13469207043343598078"
+      },
+      {
+        "file": "docs/classes/_stonksjs_finviz.Finviz.html",
+        "hash": "17029281987453156927"
+      },
+      {
+        "file": "nx.json",
+        "hash": "14306609654782995249"
+      },
+      {
+        "file": "babel.config.js",
+        "hash": "2289699371279952991"
+      },
+      {
+        "file": "jest.config.js",
+        "hash": "7577309450353479091"
       }
     ],
     "projectFileMap": {
