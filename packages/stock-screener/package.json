@@ -1,6 +1,6 @@
 {
   "name": "@jongan69/stonksjs-stock-screener",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Pre-defined industry standard stock screeners from Finviz",
   "author": "Jonathan Gan <jongan69@users.noreply.github.com>",
   "homepage": "https://github.com/jongan69/stonksjs/tree/main/packages/stock-screener#readme",

@@ -1,6 +1,6 @@
 {
   "name": "@jongan69/stonksjs-core",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Single point of entry for all stonksjs packages",
   "keywords": [
     "robinhood",

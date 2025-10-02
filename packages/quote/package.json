@@ -1,6 +1,6 @@
 {
   "name": "@jongan69/stonksjs-quote",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Detailed, real-time stock quote data",
   "author": "Jonathan Gan <jongan69@users.noreply.github.com>",
   "homepage": "https://github.com/jongan69/stonksjs/tree/main/packages/quote#readme",

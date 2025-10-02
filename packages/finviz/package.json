@@ -1,6 +1,6 @@
 {
   "name": "@jongan69/stonksjs-finviz",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Unofficial finviz API",
   "author": "Jonathan Gan <jongan69@users.noreply.github.com>",
   "homepage": "https://github.com/jongan69/stonksjs/tree/main/packages/finviz#readme",
