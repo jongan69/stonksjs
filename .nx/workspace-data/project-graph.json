@@ -1,11 +1,11 @@
 {
   "nodes": {
-    "@stonksjs/stock-screener": {
-      "name": "@stonksjs/stock-screener",
+    "@jongan69/stonksjs-stock-screener": {
+      "name": "@jongan69/stonksjs-stock-screener",
       "type": "lib",
       "data": {
         "root": "packages/stock-screener",
-        "name": "@stonksjs/stock-screener",
+        "name": "@jongan69/stonksjs-stock-screener",
         "tags": ["npm:public"],
         "metadata": {
           "targetGroups": {
@@ -20,7 +20,7 @@
           },
           "description": "Pre-defined industry standard stock screeners from Finviz",
           "js": {
-            "packageName": "@stonksjs/stock-screener",
+            "packageName": "@jongan69/stonksjs-stock-screener",
             "packageExports": {
               ".": {
                 "import": {
@@ -124,12 +124,12 @@
         "implicitDependencies": []
       }
     },
-    "@stonksjs/finviz": {
-      "name": "@stonksjs/finviz",
+    "@jongan69/stonksjs-finviz": {
+      "name": "@jongan69/stonksjs-finviz",
       "type": "lib",
       "data": {
         "root": "packages/finviz",
-        "name": "@stonksjs/finviz",
+        "name": "@jongan69/stonksjs-finviz",
         "tags": ["npm:public"],
         "metadata": {
           "targetGroups": {
@@ -144,7 +144,7 @@
           },
           "description": "Unofficial finviz API",
           "js": {
-            "packageName": "@stonksjs/finviz",
+            "packageName": "@jongan69/stonksjs-finviz",
             "packageExports": {
               ".": {
                 "import": {
@@ -248,12 +248,12 @@
         "implicitDependencies": []
       }
     },
-    "@stonksjs/quote": {
-      "name": "@stonksjs/quote",
+    "@jongan69/stonksjs-quote": {
+      "name": "@jongan69/stonksjs-quote",
       "type": "lib",
       "data": {
         "root": "packages/quote",
-        "name": "@stonksjs/quote",
+        "name": "@jongan69/stonksjs-quote",
         "tags": ["npm:public"],
         "metadata": {
           "targetGroups": {
@@ -268,7 +268,7 @@
           },
           "description": "Detailed, real-time stock quote data",
           "js": {
-            "packageName": "@stonksjs/quote",
+            "packageName": "@jongan69/stonksjs-quote",
             "packageExports": {
               ".": {
                 "import": {
@@ -372,12 +372,12 @@
         "implicitDependencies": []
       }
     },
-    "@stonksjs/core": {
-      "name": "@stonksjs/core",
+    "@jongan69/stonksjs-core": {
+      "name": "@jongan69/stonksjs-core",
       "type": "lib",
       "data": {
         "root": "packages/core",
-        "name": "@stonksjs/core",
+        "name": "@jongan69/stonksjs-core",
         "tags": [
           "npm:public",
           "npm:robinhood",
@@ -400,7 +400,7 @@
           },
           "description": "Single point of entry for all stonksjs packages",
           "js": {
-            "packageName": "@stonksjs/core",
+            "packageName": "@jongan69/stonksjs-core",
             "packageExports": {
               ".": {
                 "import": {
@@ -9976,101 +9976,101 @@
     }
   },
   "dependencies": {
-    "@stonksjs/stock-screener": [
+    "@jongan69/stonksjs-stock-screener": [
       {
-        "source": "@stonksjs/stock-screener",
-        "target": "npm:typedoc",
+        "source": "@jongan69/stonksjs-stock-screener",
+        "target": "npm:typedoc@0.24.8",
         "type": "static"
       },
       {
-        "source": "@stonksjs/stock-screener",
+        "source": "@jongan69/stonksjs-stock-screener",
         "target": "npm:typescript@5.0.4",
         "type": "static"
       },
       {
-        "source": "@stonksjs/stock-screener",
-        "target": "@stonksjs/finviz",
+        "source": "@jongan69/stonksjs-stock-screener",
+        "target": "@jongan69/stonksjs-finviz",
         "type": "static"
       },
       {
-        "source": "@stonksjs/stock-screener",
+        "source": "@jongan69/stonksjs-stock-screener",
         "target": "npm:axios",
         "type": "static"
       },
       {
-        "source": "@stonksjs/stock-screener",
+        "source": "@jongan69/stonksjs-stock-screener",
         "target": "npm:lodash",
         "type": "static"
       }
     ],
-    "@stonksjs/finviz": [
+    "@jongan69/stonksjs-finviz": [
       {
-        "source": "@stonksjs/finviz",
-        "target": "npm:typedoc",
+        "source": "@jongan69/stonksjs-finviz",
+        "target": "npm:typedoc@0.24.8",
         "type": "static"
       },
       {
-        "source": "@stonksjs/finviz",
+        "source": "@jongan69/stonksjs-finviz",
         "target": "npm:typescript@5.0.4",
         "type": "static"
       },
       {
-        "source": "@stonksjs/finviz",
+        "source": "@jongan69/stonksjs-finviz",
         "target": "npm:axios",
         "type": "static"
       },
       {
-        "source": "@stonksjs/finviz",
+        "source": "@jongan69/stonksjs-finviz",
         "target": "npm:cheerio",
         "type": "static"
       },
       {
-        "source": "@stonksjs/finviz",
+        "source": "@jongan69/stonksjs-finviz",
         "target": "npm:lodash",
         "type": "static"
       }
     ],
-    "@stonksjs/quote": [
+    "@jongan69/stonksjs-quote": [
       {
-        "source": "@stonksjs/quote",
-        "target": "npm:typedoc",
+        "source": "@jongan69/stonksjs-quote",
+        "target": "npm:typedoc@0.24.8",
         "type": "static"
       },
       {
-        "source": "@stonksjs/quote",
+        "source": "@jongan69/stonksjs-quote",
         "target": "npm:typescript@5.0.4",
         "type": "static"
       },
       {
-        "source": "@stonksjs/quote",
-        "target": "@stonksjs/finviz",
+        "source": "@jongan69/stonksjs-quote",
+        "target": "@jongan69/stonksjs-finviz",
         "type": "static"
       }
     ],
-    "@stonksjs/core": [
+    "@jongan69/stonksjs-core": [
       {
-        "source": "@stonksjs/core",
-        "target": "npm:typedoc",
+        "source": "@jongan69/stonksjs-core",
+        "target": "npm:typedoc@0.24.8",
         "type": "static"
       },
       {
-        "source": "@stonksjs/core",
+        "source": "@jongan69/stonksjs-core",
         "target": "npm:typescript@5.0.4",
         "type": "static"
       },
       {
-        "source": "@stonksjs/core",
-        "target": "@stonksjs/finviz",
+        "source": "@jongan69/stonksjs-core",
+        "target": "@jongan69/stonksjs-finviz",
         "type": "static"
       },
       {
-        "source": "@stonksjs/core",
-        "target": "@stonksjs/quote",
+        "source": "@jongan69/stonksjs-core",
+        "target": "@jongan69/stonksjs-quote",
         "type": "static"
       },
       {
-        "source": "@stonksjs/core",
-        "target": "@stonksjs/stock-screener",
+        "source": "@jongan69/stonksjs-core",
+        "target": "@jongan69/stonksjs-stock-screener",
         "type": "static"
       }
     ],
@@ -23228,5 +23228,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1759408178538
+  "computedAt": 1759408887020
 }

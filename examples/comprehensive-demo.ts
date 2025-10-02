@@ -10,8 +10,8 @@
  * - @stonksjs/stock-screener: Pre-defined industry standard stock screeners
  */
 
-import { finviz, quote, stockScreener } from '@stonksjs/core';
-import type { Quote as QuoteType, Screener } from '@stonksjs/finviz';
+import { finviz, quote, stockScreener } from '@jongan69/stonksjs-core';
+import type { Quote as QuoteType, Screener } from '@jongan69/stonksjs-finviz';
 
 // Color codes for console output
 const colors = {

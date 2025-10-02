@@ -10,7 +10,7 @@
  * - @stonksjs/stock-screener: Pre-defined industry standard stock screeners
  */
 
-const { finviz, quote, stockScreener } = require('@stonksjs/core');
+const { finviz, quote, stockScreener } = require('@jongan69/stonksjs-core');
 
 // Color codes for console output
 const colors = {

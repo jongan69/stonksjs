@@ -1,8 +1,8 @@
 <img src="https://raw.githubusercontent.com/nielse63/stonksjs/main/docs/assets/logo.svg" align="right" width="100" />
 
-# stonksjs
+# @jongan69/stonksjs
 
-> Reliable algotrading utilities written in node
+> Reliable algotrading utilities written in node - Updated and maintained fork
 
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/nielse63/stonksjs?style=flat-square)
 ![CI Tests](https://github.com/nielse63/stonksjs/workflows/CI%20Tests/badge.svg)

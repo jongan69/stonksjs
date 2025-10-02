@@ -1,9 +1,9 @@
 {
-  "name": "@stonksjs/finviz",
-  "version": "3.0.1",
+  "name": "@jongan69/stonksjs-finviz",
+  "version": "4.0.0",
   "description": "Unofficial finviz API",
-  "author": "Erik Nielsen <erik@312development.com>",
-  "homepage": "https://github.com/nielse63/stonksjs/tree/main/packages/finviz#readme",
+  "author": "Jonathan Gan <jongan69@users.noreply.github.com>",
+  "homepage": "https://github.com/jongan69/stonksjs/tree/main/packages/finviz#readme",
   "license": "ISC",
   "types": "./dist/cjs/types/index.d.ts",
   "main": "./dist/cjs/index.js",
@@ -27,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nielse63/stonksjs.git"
+    "url": "git+https://github.com/jongan69/stonksjs.git"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1",
@@ -38,7 +38,7 @@
     "docs": "typedoc --options typedoc.json"
   },
   "bugs": {
-    "url": "https://github.com/nielse63/stonksjs/issues"
+    "url": "https://github.com/jongan69/stonksjs/issues"
   },
   "dependencies": {
     "axios": "^1.4.0",

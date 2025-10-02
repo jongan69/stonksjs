@@ -1,4 +1,4 @@
-import finviz from '@stonksjs/finviz';
+import finviz from '@jongan69/stonksjs-finviz';
 import { type Screener } from './types';
 
 export class StockScreener {

@@ -1,4 +1,4 @@
-import finviz from '@stonksjs/finviz';
+import finviz from '@jongan69/stonksjs-finviz';
 import Cache from './Cache';
 import { type Quote as QuoteType } from './types';
 

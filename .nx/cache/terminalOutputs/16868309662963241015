@@ -1,0 +1,23 @@
+
+> @jongan69/stonksjs-quote@4.0.0 build
+> rm -rf dist && npm run build:esm && npm run build:cjs
+
+
+> @jongan69/stonksjs-quote@4.0.0 build:esm
+> tsc -p ./tsconfig.esm.json
+
+src/Quote.ts(1,20): error TS2307: Cannot find module '@jongan69/stonksjs-finviz' or its corresponding type declarations.
+npm error Lifecycle script `build:esm` failed with error:
+npm error code 2
+npm error path /Users/jonathangan/Desktop/Code/stonksjs/packages/quote
+npm error workspace @jongan69/stonksjs-quote@4.0.0
+npm error location /Users/jonathangan/Desktop/Code/stonksjs/packages/quote
+npm error command failed
+npm error command sh -c tsc -p ./tsconfig.esm.json
+npm error Lifecycle script `build` failed with error:
+npm error code 2
+npm error path /Users/jonathangan/Desktop/Code/stonksjs/packages/quote
+npm error workspace @jongan69/stonksjs-quote@4.0.0
+npm error location /Users/jonathangan/Desktop/Code/stonksjs/packages/quote
+npm error command failed
+npm error command sh -c rm -rf dist && npm run build:esm && npm run build:cjs
