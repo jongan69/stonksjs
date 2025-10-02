@@ -113,12 +113,31 @@ class Finviz {
    */
   static parseScreenerResponse(html: string): string[] {
     const $ = load(html);
-    const rows = $('.table-light > tbody > tr:not(:first-child)');
+    // Updated selector to match current Finviz HTML structure
+    // Try multiple selectors to handle different table structures
+    let rows = $('table.styled-table-new.screener_table tr:not(:first-child)');
+
+    // If no results, try a more flexible selector
+    if (rows.length === 0) {
+      rows = $(
+        'table[class*="styled-table-new"][class*="screener_table"] tr:not(:first-child)',
+      );
+    }
+
+    // If still no results, try the most general selector
+    if (rows.length === 0) {
+      rows = $('table tr:not(:first-child)');
+    }
+
     const output: string[] = [];
     rows.each((_, row) => {
-      const cell = $(row).find('> td:nth-child(2)');
+      const cell = $(row).find('td:nth-child(2)');
       if (cell.length) {
-        output.push(cell.text() as string);
+        const symbol = cell.text().trim();
+        // Only include valid stock symbols (3-5 uppercase letters)
+        if (symbol.match(/^[A-Z]{3,5}$/)) {
+          output.push(symbol);
+        }
       }
     });
     return output;

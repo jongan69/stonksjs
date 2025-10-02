@@ -12,6 +12,7 @@ export { Finviz };
 export const getQuote = finviz.getQuote.bind(finviz);
 export const getScreener = finviz.getScreener.bind(finviz);
 export const getScreenersList = finviz.getScreenersList.bind(finviz);
+export const getUrlForScreener = finviz.getUrlForScreener.bind(finviz);
 
 // for backwards compatibility
 export const quote = getQuote;
